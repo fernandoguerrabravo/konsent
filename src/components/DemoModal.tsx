@@ -228,6 +228,10 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           )}
         </div>
 
+        <p className="text-xs text-white/40 mt-4 leading-relaxed">
+          Al enviar este formulario, consientes que Konsent SpA trate tus datos personales con la finalidad de contactarte y coordinar una demostración del servicio, conforme a la Ley N° 21.719 de Protección de Datos Personales.
+        </p>
+
         <Turnstile
           onVerify={handleTurnstileVerify}
           onExpire={handleTurnstileExpire}
