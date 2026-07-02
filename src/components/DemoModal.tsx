@@ -238,6 +238,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           variant="primary"
           size="lg"
           className="w-full mt-2"
+          disabled={!turnstileToken || sending}
         >
           {sending ? "Enviando..." : "Solicitar demostración"}
         </Button>
