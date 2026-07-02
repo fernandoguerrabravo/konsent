@@ -69,6 +69,7 @@ export default async function handler(
   }
 
   try {
+    // Correo interno al equipo Konsent
     await resend.emails.send({
       from: "Konsent <noreply@konsent.cl>",
       to: ["gabriela@konsent.cl", "andrea@konsent.cl"],
@@ -83,6 +84,28 @@ export default async function handler(
           <tr><td style="padding: 8px; font-weight: bold;">Teléfono:</td><td style="padding: 8px;">${telefono || "No proporcionado"}</td></tr>
           <tr><td style="padding: 8px; font-weight: bold;">Industria:</td><td style="padding: 8px;">${industria}</td></tr>
         </table>
+      `,
+    });
+
+    // Correo de confirmación al solicitante
+    await resend.emails.send({
+      from: "Konsent <noreply@konsent.cl>",
+      to: [correo],
+      subject: "Recibimos tu solicitud de demo — Konsent",
+      html: `
+        <div style="font-family: 'Inter', sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #1a1a2e;">Hola ${nombre},</h2>
+          <p style="color: #333; line-height: 1.6;">
+            Gracias por tu interés en <strong>Konsent</strong>. Recibimos tu solicitud de demostración y te contactaremos en menos de 24 horas para coordinar una sesión personalizada.
+          </p>
+          <p style="color: #333; line-height: 1.6;">
+            Mientras tanto, si tienes alguna pregunta puedes escribirnos directamente a <a href="mailto:gabriela@konsent.cl">gabriela@konsent.cl</a>.
+          </p>
+          <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
+          <p style="color: #666; font-size: 14px;">
+            <strong>Konsent</strong> · Cumplimiento Ley N° 21.719 · Chile
+          </p>
+        </div>
       `,
     });
 
