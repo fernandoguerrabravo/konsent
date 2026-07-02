@@ -16,7 +16,7 @@ export default function Logo({ className = "", size = "md" }: LogoProps) {
 
   return (
     <Image
-      src="/logo.jpg"
+      src="/logo.png"
       alt="Konsent"
       width={height * 4}
       height={height}
