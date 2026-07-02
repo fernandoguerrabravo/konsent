@@ -1,12 +1,15 @@
 import Logo from "@/components/ui/Logo";
 
+interface FooterProps {
+  onOpenDemo: () => void;
+}
+
 const footerLinks = [
   { label: "Solución", href: "#solucion" },
   { label: "Blockchain", href: "#blockchain" },
-  { label: "Contacto", href: "#contacto" },
 ];
 
-export default function Footer() {
+export default function Footer({ onOpenDemo }: FooterProps) {
   return (
     <footer className="border-t border-white/[0.06] bg-[#0a0a0f]">
       <div className="container mx-auto px-4 py-8">
@@ -28,6 +31,13 @@ export default function Footer() {
                 {link.label}
               </a>
             ))}
+            <button
+              type="button"
+              onClick={onOpenDemo}
+              className="text-white/50 hover:text-white transition-colors duration-200"
+            >
+              Agende un Demo
+            </button>
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function Home() {
         <ModulesSection />
         <CTASection onOpenDemo={() => setIsDemoOpen(true)} />
       </main>
-      <Footer />
+      <Footer onOpenDemo={() => setIsDemoOpen(true)} />
       <DemoModal isOpen={isDemoOpen} onClose={() => setIsDemoOpen(false)} />
     </>
   );
