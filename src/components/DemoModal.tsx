@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Modal from "@/components/ui/Modal";
 import Button from "@/components/ui/Button";
+import Turnstile from "@/components/ui/Turnstile";
 import { DemoFormData } from "@/types";
 
 interface DemoModalProps {
@@ -30,6 +31,15 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
   const [errors, setErrors] = useState<Partial<Record<keyof DemoFormData, string>>>({});
   const [submitted, setSubmitted] = useState<boolean>(false);
   const [sending, setSending] = useState<boolean>(false);
+  const [turnstileToken, setTurnstileToken] = useState<string>("");
+
+  const handleTurnstileVerify = useCallback((token: string) => {
+    setTurnstileToken(token);
+  }, []);
+
+  const handleTurnstileExpire = useCallback(() => {
+    setTurnstileToken("");
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -55,18 +65,24 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
     e.preventDefault();
     if (!validate()) return;
 
+    if (!turnstileToken) {
+      alert("Por favor completa la verificación de seguridad.");
+      return;
+    }
+
     setSending(true);
     try {
       const res = await fetch("/api/demo-request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, turnstileToken }),
       });
 
       if (res.ok) {
         setSubmitted(true);
       } else {
-        alert("Hubo un error al enviar la solicitud. Intenta de nuevo.");
+        const data = await res.json();
+        alert(data.error || "Hubo un error al enviar la solicitud. Intenta de nuevo.");
       }
     } catch {
       alert("Error de conexión. Intenta de nuevo.");
@@ -211,6 +227,11 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
             <p className="text-xs text-red-400 mt-1">{errors.industria}</p>
           )}
         </div>
+
+        <Turnstile
+          onVerify={handleTurnstileVerify}
+          onExpire={handleTurnstileExpire}
+        />
 
         <Button
           type="submit"
