@@ -1,7 +1,20 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Resend } from "resend";
+import { RateLimiterMemory } from "rate-limiter-flexible";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
+// Máximo 3 solicitudes por IP cada 15 minutos
+const rateLimiter = new RateLimiterMemory({
+  points: 3,
+  duration: 900, // 15 minutos en segundos
+});
+
+function getClientIp(req: NextApiRequest): string {
+  const forwarded = req.headers["x-forwarded-for"];
+  if (typeof forwarded === "string") return forwarded.split(",")[0].trim();
+  return req.socket.remoteAddress || "unknown";
+}
 
 export default async function handler(
   req: NextApiRequest,
@@ -11,10 +24,24 @@ export default async function handler(
     return res.status(405).json({ error: "Método no permitido" });
   }
 
+  // Rate limiting
+  const clientIp = getClientIp(req);
+  try {
+    await rateLimiter.consume(clientIp);
+  } catch {
+    return res.status(429).json({ error: "Demasiadas solicitudes. Intenta en 15 minutos." });
+  }
+
   const { nombre, empresa, correo, telefono, industria } = req.body;
 
   if (!nombre || !empresa || !correo || !industria) {
     return res.status(400).json({ error: "Faltan campos obligatorios" });
+  }
+
+  // Validación básica de email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(correo)) {
+    return res.status(400).json({ error: "Correo inválido" });
   }
 
   try {
