@@ -29,6 +29,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
   });
   const [errors, setErrors] = useState<Partial<Record<keyof DemoFormData, string>>>({});
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [sending, setSending] = useState<boolean>(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -50,10 +51,27 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validate()) {
-      setSubmitted(true);
+    if (!validate()) return;
+
+    setSending(true);
+    try {
+      const res = await fetch("/api/demo-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Hubo un error al enviar la solicitud. Intenta de nuevo.");
+      }
+    } catch {
+      alert("Error de conexión. Intenta de nuevo.");
+    } finally {
+      setSending(false);
     }
   };
 
@@ -200,7 +218,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           size="lg"
           className="w-full mt-2"
         >
-          Solicitar demostración
+          {sending ? "Enviando..." : "Solicitar demostración"}
         </Button>
       </form>
     </Modal>
