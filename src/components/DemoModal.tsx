@@ -1,0 +1,208 @@
+import { useState } from "react";
+import Modal from "@/components/ui/Modal";
+import Button from "@/components/ui/Button";
+import { DemoFormData } from "@/types";
+
+interface DemoModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const INDUSTRY_OPTIONS = [
+  "Retail / E-commerce",
+  "Salud",
+  "Finanzas / Seguros",
+  "Servicios profesionales",
+  "Tecnología",
+  "Logística / Aduanas",
+  "Educación",
+  "Otra",
+];
+
+export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
+  const [formData, setFormData] = useState<DemoFormData>({
+    nombre: "",
+    empresa: "",
+    correo: "",
+    telefono: "",
+    industria: "",
+  });
+  const [errors, setErrors] = useState<Partial<Record<keyof DemoFormData, string>>>({});
+  const [submitted, setSubmitted] = useState<boolean>(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name as keyof DemoFormData]) {
+      setErrors((prev) => ({ ...prev, [name]: "" }));
+    }
+  };
+
+  const validate = (): boolean => {
+    const newErrors: Partial<Record<keyof DemoFormData, string>> = {};
+    if (!formData.nombre.trim()) newErrors.nombre = "El nombre es obligatorio";
+    if (!formData.empresa.trim()) newErrors.empresa = "La empresa es obligatoria";
+    if (!formData.correo.trim()) newErrors.correo = "El correo es obligatorio";
+    if (!formData.industria) newErrors.industria = "Selecciona una industria";
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (validate()) {
+      setSubmitted(true);
+    }
+  };
+
+  const inputStyles =
+    "w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:border-[#6366f1] focus:ring-1 focus:ring-[#6366f1]/30 focus:outline-none transition-all";
+  const labelStyles = "text-sm text-white/60 mb-1 block";
+
+  if (submitted) {
+    return (
+      <Modal isOpen={isOpen} onClose={onClose} title="Agenda tu demostración">
+        <div className="text-center py-6">
+          <div className="mx-auto w-16 h-16 bg-[#6366f1]/20 rounded-full flex items-center justify-center mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8 text-[#818cf8]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold text-white mb-2">
+            ¡Solicitud enviada!
+          </h3>
+          <p className="text-white/50">
+            Gracias por tu interés en Konsent. Te contactaremos muy pronto al
+            correo que nos dejaste para coordinar tu demostración.
+          </p>
+        </div>
+      </Modal>
+    );
+  }
+
+  return (
+    <Modal isOpen={isOpen} onClose={onClose} title="Agenda tu demostración">
+      <p className="text-white/50 mb-6">
+        Déjanos tus datos y te contactamos en menos de 24 horas para coordinar
+        una demo personalizada.
+      </p>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
+          <label htmlFor="nombre" className={labelStyles}>
+            Nombre completo
+          </label>
+          <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            placeholder="Nombre completo"
+            value={formData.nombre}
+            onChange={handleChange}
+            className={inputStyles}
+          />
+          {errors.nombre && (
+            <p className="text-xs text-red-400 mt-1">{errors.nombre}</p>
+          )}
+        </div>
+
+        <div>
+          <label htmlFor="empresa" className={labelStyles}>
+            Empresa
+          </label>
+          <input
+            id="empresa"
+            name="empresa"
+            type="text"
+            placeholder="Empresa"
+            value={formData.empresa}
+            onChange={handleChange}
+            className={inputStyles}
+          />
+          {errors.empresa && (
+            <p className="text-xs text-red-400 mt-1">{errors.empresa}</p>
+          )}
+        </div>
+
+        <div>
+          <label htmlFor="correo" className={labelStyles}>
+            Correo corporativo
+          </label>
+          <input
+            id="correo"
+            name="correo"
+            type="email"
+            placeholder="Correo corporativo"
+            value={formData.correo}
+            onChange={handleChange}
+            className={inputStyles}
+          />
+          {errors.correo && (
+            <p className="text-xs text-red-400 mt-1">{errors.correo}</p>
+          )}
+        </div>
+
+        <div>
+          <label htmlFor="telefono" className={labelStyles}>
+            Teléfono
+          </label>
+          <input
+            id="telefono"
+            name="telefono"
+            type="tel"
+            placeholder="Teléfono"
+            value={formData.telefono}
+            onChange={handleChange}
+            className={inputStyles}
+          />
+        </div>
+
+        <div>
+          <label htmlFor="industria" className={labelStyles}>
+            Industria
+          </label>
+          <select
+            id="industria"
+            name="industria"
+            value={formData.industria}
+            onChange={handleChange}
+            className={inputStyles}
+          >
+            <option value="" disabled>
+              Selecciona...
+            </option>
+            {INDUSTRY_OPTIONS.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+          {errors.industria && (
+            <p className="text-xs text-red-400 mt-1">{errors.industria}</p>
+          )}
+        </div>
+
+        <Button
+          type="submit"
+          variant="primary"
+          size="lg"
+          className="w-full mt-2"
+        >
+          Solicitar demostración
+        </Button>
+      </form>
+    </Modal>
+  );
+}
