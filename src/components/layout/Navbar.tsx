@@ -23,7 +23,7 @@ export default function Navbar({ onOpenDemo }: NavbarProps) {
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#" aria-label="Konsent - Inicio">
-          <Logo size="sm" />
+          <Logo size="md" />
         </a>
 
         {/* Desktop nav links */}

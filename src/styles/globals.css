@@ -13,6 +13,27 @@
     font-family: var(--font-inter), Inter, system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Evita palabras sueltas al final de párrafos (huérfanas/viudas) */
+    text-wrap: pretty;
+  }
+
+  /* Titulos: reparte las líneas de forma equilibrada para una lectura continua */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  /* Párrafos y textos de lectura: evita que quede una sola palabra en la última línea */
+  p,
+  li,
+  blockquote,
+  figcaption {
+    text-wrap: pretty;
+    /* Mínimo de caracteres antes/después de un guionado o corte */
+    orphans: 2;
+    widows: 2;
   }
 }
 
@@ -20,17 +41,17 @@
   .glass-card {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 1rem;
+    border-radius: 0;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
 
   .glass-card-hover:hover {
-    border-color: rgba(99, 102, 241, 0.3);
+    border-color: rgba(86, 209, 178, 0.3);
   }
 
   .gradient-text {
-    background: linear-gradient(to right, #6366f1, #818cf8);
+    background: linear-gradient(to right, #2FB597, #56D1B2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

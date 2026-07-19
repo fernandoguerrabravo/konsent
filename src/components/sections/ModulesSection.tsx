@@ -3,8 +3,15 @@ import Card from "@/components/ui/Card";
 const modules = [
   {
     title: "Portal de privacidad",
-    description:
-      "Punto de entrada público con tu marca, bilingüe, para que tus clientes gestionen su consentimiento.",
+    description: (
+      <>
+        Punto de entrada público{" "}
+        <strong className="font-semibold text-white/90">
+          con tu marca, bilingüe
+        </strong>
+        , para que tus clientes gestionen su consentimiento.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -34,8 +41,14 @@ const modules = [
   },
   {
     title: "Formulario de consentimiento",
-    description:
-      "Captura legal por finalidad, con certificado, hash y registro de identidad, fecha e IP.",
+    description: (
+      <>
+        <strong className="font-semibold text-white/90">
+          Captura legal por finalidad
+        </strong>
+        , con certificado, hash y registro de identidad, fecha e IP.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -69,8 +82,19 @@ const modules = [
   },
   {
     title: "Panel del titular",
-    description:
-      "Tus clientes revisan sus consentimientos, ejercen derechos y ven la cadena de custodia.",
+    description: (
+      <>
+        Tus clientes revisan sus consentimientos,{" "}
+        <strong className="font-semibold text-white/90">
+          ejercen derechos
+        </strong>{" "}
+        y ven la{" "}
+        <strong className="font-semibold text-white/90">
+          cadena de custodia
+        </strong>
+        .
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -102,8 +126,15 @@ const modules = [
   },
   {
     title: "Panel de administración",
-    description:
-      "Tu equipo gestiona solicitudes con alertas de plazos, filtros y reportes de cumplimiento.",
+    description: (
+      <>
+        Tu equipo gestiona solicitudes con{" "}
+        <strong className="font-semibold text-white/90">
+          alertas de plazos
+        </strong>
+        , filtros y reportes de cumplimiento.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -131,8 +162,13 @@ const modules = [
   },
   {
     title: "App móvil",
-    description:
-      "Módulo del titular y módulo administrativo en una app nativa para iOS y Android.",
+    description: (
+      <>
+        Módulo del titular y módulo administrativo en una{" "}
+        <strong className="font-semibold text-white/90">app nativa</strong> para
+        iOS y Android.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -160,8 +196,18 @@ const modules = [
   },
   {
     title: "Documentos legales",
-    description:
-      "Política de privacidad, contratos DPA y Registro de Actividades de Tratamiento listos para usar.",
+    description: (
+      <>
+        <strong className="font-semibold text-white/90">
+          Política de privacidad, contratos DPA
+        </strong>{" "}
+        y{" "}
+        <strong className="font-semibold text-white/90">
+          Registro de Actividades de Tratamiento
+        </strong>{" "}
+        listos para usar.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -198,15 +244,16 @@ export default function ModulesSection() {
             Seis módulos que trabajan juntos
           </p>
           <p className="text-white/50">
-            Todo lo que tu empresa necesita para cumplir la Ley 21.719, integrado
-            en una sola plataforma.
+            Todo lo que tu empresa necesita para cumplir la{" "}
+            <strong className="font-semibold text-white/90">Ley 21.719</strong>,
+            integrado en una sola plataforma.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {modules.map((module) => (
             <Card key={module.title}>
-              <div className="text-[#6366f1] mb-4">{module.icon}</div>
+              <div className="text-[#56D1B2] mb-4">{module.icon}</div>
               <h3 className="text-lg font-semibold text-white mb-2">
                 {module.title}
               </h3>

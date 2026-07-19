@@ -10,13 +10,13 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
     <section className="relative overflow-hidden bg-[#0a0a0f]">
       {/* Radial gradient glow background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.15)_0%,rgba(99,102,241,0.05)_40%,transparent_70%)]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(86,209,178,0.15)_0%,rgba(86,209,178,0.05)_40%,transparent_70%)]" />
       </div>
 
       <div className="container mx-auto px-4 pt-28 pb-16 lg:pt-32 lg:pb-20 flex flex-col lg:flex-row items-center gap-12 relative z-10">
         {/* Left content column */}
         <div className="flex-1 space-y-6">
-          <span className="inline-flex items-center gap-2 bg-[#6366f1]/10 border border-[#6366f1]/30 text-[#818cf8] px-4 py-1.5 rounded-full text-sm font-medium">
+          <span className="inline-flex items-center gap-2 bg-[#56D1B2]/10 border border-[#56D1B2]/30 text-[#56D1B2] px-4 py-1.5 rounded-none text-sm font-medium">
             Conforme a la Ley N° 21.719
           </span>
 
@@ -25,9 +25,20 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
           </h1>
 
           <p className="text-white/70 text-lg max-w-xl">
-            El sistema integral de gestión de consentimiento y derechos de datos
-            personales para cualquier empresa en Chile. Con trazabilidad
-            blockchain y validez legal.
+            El sistema integral de{" "}
+            <strong className="font-semibold text-white">
+              gestión de consentimiento
+            </strong>{" "}
+            y{" "}
+            <strong className="font-semibold text-white">
+              derechos de datos personales
+            </strong>{" "}
+            para cualquier empresa en Chile. Con{" "}
+            <strong className="font-semibold text-white">
+              trazabilidad blockchain
+            </strong>{" "}
+            y{" "}
+            <strong className="font-semibold text-white">validez legal</strong>.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -145,13 +156,13 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
 
         {/* Right visualization column — Blockchain card */}
         <div className="hidden lg:block flex-1 max-w-md w-full">
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 backdrop-blur-sm">
+          <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-6 backdrop-blur-sm">
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
               <span className="text-white/50 text-sm font-medium">
                 Cadena de custodia
               </span>
-              <span className="inline-flex items-center gap-1 bg-[#22c55e]/10 text-[#22c55e] px-2 py-0.5 rounded-full text-xs font-medium">
+              <span className="inline-flex items-center gap-1 bg-[#56D1B2]/10 text-[#56D1B2] px-2 py-0.5 rounded-none text-xs font-medium">
                 <svg
                   width="12"
                   height="12"
@@ -172,12 +183,12 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
             </div>
 
             {/* Block #4 */}
-            <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-4 mb-1">
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-4 mb-1">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-white/50 text-xs">
                   Bloque #4 — reciente
                 </span>
-                <span className="inline-flex items-center bg-[#22c55e]/10 text-[#22c55e] px-2 py-0.5 rounded text-xs">
+                <span className="inline-flex items-center bg-[#56D1B2]/10 text-[#56D1B2] px-2 py-0.5 rounded-none text-xs">
                   Válido
                 </span>
               </div>
@@ -195,7 +206,7 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
             </div>
 
             {/* Block #3 */}
-            <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-4 mb-1">
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-4 mb-1">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-white/50 text-xs">Bloque #3</span>
               </div>
@@ -213,7 +224,7 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
             </div>
 
             {/* Block #1 */}
-            <div className="bg-white/[0.02] border border-white/[0.06] rounded-lg p-4">
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-4">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-white/50 text-xs">
                   Bloque #1 — génesis

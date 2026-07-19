@@ -3,20 +3,42 @@ export default function BlockchainSection() {
     {
       number: 1,
       title: "Cada evento genera un hash SHA-256",
-      description:
-        "Una huella digital única. Si el contenido cambia un carácter, el hash es completamente distinto.",
+      description: (
+        <>
+          Una{" "}
+          <strong className="font-semibold text-white/90">
+            huella digital única
+          </strong>
+          . Si el contenido cambia un carácter, el hash es completamente
+          distinto.
+        </>
+      ),
     },
     {
       number: 2,
       title: "Cada bloque encadena el anterior",
-      description:
-        "Modificar un evento pasado invalida todos los bloques siguientes. La manipulación es detectable al instante.",
+      description: (
+        <>
+          Modificar un evento pasado{" "}
+          <strong className="font-semibold text-white/90">
+            invalida todos los bloques siguientes
+          </strong>
+          . La manipulación es detectable al instante.
+        </>
+      ),
     },
     {
       number: 3,
       title: "Verificación en tiempo real",
-      description:
-        "Cualquier alteración se detecta sin necesidad de un auditor externo. Tu mejor defensa ante la APDP.",
+      description: (
+        <>
+          Cualquier alteración se detecta{" "}
+          <strong className="font-semibold text-white/90">
+            sin necesidad de un auditor externo
+          </strong>
+          . Tu mejor defensa ante la APDP.
+        </>
+      ),
     },
   ];
 
@@ -41,22 +63,32 @@ export default function BlockchainSection() {
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left column — Explanation content */}
           <div className="flex-1">
-            <span className="inline-block text-sm text-[#818cf8] mb-4">
+            <span className="inline-block text-sm text-[#56D1B2] mb-4">
               Diferenciador clave
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Evidencia que no se puede alterar
             </h2>
             <p className="text-white/50 mb-8">
-              La Ley 21.719 exige responsabilidad proactiva: demostrar
-              activamente el cumplimiento. Nuestra cadena de custodia lo hace
-              matemáticamente imposible de falsificar.
+              La Ley 21.719 exige{" "}
+              <strong className="font-semibold text-white/90">
+                responsabilidad proactiva
+              </strong>
+              : demostrar activamente el cumplimiento. Nuestra{" "}
+              <strong className="font-semibold text-white/90">
+                cadena de custodia
+              </strong>{" "}
+              lo hace{" "}
+              <strong className="font-semibold text-white/90">
+                matemáticamente imposible de falsificar
+              </strong>
+              .
             </p>
 
             <div className="space-y-6">
               {explanations.map((item) => (
                 <div key={item.number} className="flex gap-4">
-                  <div className="bg-[#6366f1] text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0 text-sm font-semibold">
+                  <div className="bg-[#56D1B2] text-white w-8 h-8 rounded-none flex items-center justify-center shrink-0 text-sm font-semibold">
                     {item.number}
                   </div>
                   <div>
@@ -72,13 +104,13 @@ export default function BlockchainSection() {
 
           {/* Right column — Visual integrity checker */}
           <div className="flex-1">
-            <div className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 backdrop-blur-sm">
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-6 backdrop-blur-sm">
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
                 <span className="text-sm font-medium text-white">
                   Integridad de la cadena
                 </span>
-                <span className="inline-flex items-center gap-1 text-xs font-medium text-[#22c55e] bg-[#22c55e]/10 px-2 py-1 rounded-full">
+                <span className="inline-flex items-center gap-1 text-xs font-medium text-[#56D1B2] bg-[#56D1B2]/10 px-2 py-1 rounded-none">
                   142/142 OK
                 </span>
               </div>
@@ -89,7 +121,7 @@ export default function BlockchainSection() {
                   <div key={item.title}>
                     <div className="flex items-start gap-3 py-4">
                       {/* Checkmark icon */}
-                      <div className="text-[#22c55e] mt-0.5">
+                      <div className="text-[#56D1B2] mt-0.5">
                         <svg
                           width="16"
                           height="16"
@@ -116,7 +148,7 @@ export default function BlockchainSection() {
                         </p>
                       </div>
                       {/* Integrity badge */}
-                      <span className="text-xs font-medium text-[#22c55e] bg-[#22c55e]/10 px-2 py-0.5 rounded-full">
+                      <span className="text-xs font-medium text-[#56D1B2] bg-[#56D1B2]/10 px-2 py-0.5 rounded-none">
                         Íntegro
                       </span>
                     </div>

@@ -16,18 +16,37 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // Brand palette derived from the Konsent logo (logo green: #56D1B2)
+        brand: {
+          DEFAULT: "#56D1B2",
+          ink: "#07231E", // dark text for use on brand-colored surfaces
+          light: "#7FDFC8",
+          deep: "#0B3F35",
+          50: "#eafaf5",
+          100: "#cef2e7",
+          200: "#a3e8d5",
+          300: "#7FDFC8",
+          400: "#56D1B2",
+          500: "#2FB597",
+          600: "#1F9B80",
+          700: "#187C67",
+          800: "#135E4F",
+          900: "#0B3F35",
+          950: "#062A24",
+        },
+        // Alias so any legacy `primary-*` usage stays on-brand
         primary: {
-          50: "#eef2ff",
-          100: "#e0e7ff",
-          200: "#c7d2fe",
-          300: "#a5b4fc",
-          400: "#818cf8",
-          500: "#6366f1",
-          600: "#6366f1",
-          700: "#4f46e5",
-          800: "#3730a3",
-          900: "#312e81",
-          950: "#1e1b4b",
+          50: "#eafaf5",
+          100: "#cef2e7",
+          200: "#a3e8d5",
+          300: "#7FDFC8",
+          400: "#56D1B2",
+          500: "#2FB597",
+          600: "#1F9B80",
+          700: "#187C67",
+          800: "#135E4F",
+          900: "#0B3F35",
+          950: "#062A24",
         },
         dark: {
           50: "#f8fafc",
@@ -43,8 +62,8 @@ const config: Config = {
           950: "#0a0a0f",
         },
         green: {
-          400: "#22c55e",
-          500: "#22c55e",
+          400: "#56D1B2",
+          500: "#2FB597",
         },
       },
       fontFamily: {
@@ -52,16 +71,16 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-hero":
-          "radial-gradient(ellipse 80% 50% at 50% 40%, rgba(99, 102, 241, 0.15) 0%, rgba(99, 102, 241, 0.05) 40%, transparent 70%)",
+          "radial-gradient(ellipse 80% 50% at 50% 40%, rgba(86, 209, 178, 0.15) 0%, rgba(86, 209, 178, 0.05) 40%, transparent 70%)",
         "gradient-cta":
-          "linear-gradient(135deg, rgba(88, 28, 135, 0.8) 0%, rgba(49, 46, 129, 0.8) 50%, rgba(30, 27, 75, 0.8) 100%)",
+          "linear-gradient(135deg, rgba(11, 63, 53, 0.85) 0%, rgba(19, 94, 79, 0.8) 50%, rgba(6, 42, 36, 0.9) 100%)",
         "gradient-card":
-          "linear-gradient(180deg, rgba(99, 102, 241, 0.03) 0%, rgba(129, 140, 248, 0.03) 100%)",
+          "linear-gradient(180deg, rgba(86, 209, 178, 0.03) 0%, rgba(127, 223, 200, 0.03) 100%)",
       },
       boxShadow: {
         card: "0 4px 6px -1px rgba(0, 0, 0, 0.3)",
         "card-hover":
-          "0 10px 15px -3px rgba(99, 102, 241, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.3)",
+          "0 10px 15px -3px rgba(86, 209, 178, 0.12), 0 4px 6px -4px rgba(0, 0, 0, 0.3)",
       },
       borderRadius: {
         xl: "0.75rem",

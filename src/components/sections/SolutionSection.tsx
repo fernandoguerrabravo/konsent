@@ -3,8 +3,19 @@ import Card from "@/components/ui/Card";
 const features = [
   {
     title: "Consentimiento granular",
-    description:
-      "Captura consentimiento informado por finalidad, distinguiendo lo obligatorio de lo opcional. Con timestamp, IP y hash de la política aceptada.",
+    description: (
+      <>
+        Captura{" "}
+        <strong className="font-semibold text-white/90">
+          consentimiento informado por finalidad
+        </strong>
+        , distinguiendo lo obligatorio de lo opcional. Con{" "}
+        <strong className="font-semibold text-white/90">
+          timestamp, IP y hash
+        </strong>{" "}
+        de la política aceptada.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -42,8 +53,16 @@ const features = [
   },
   {
     title: "Derechos ARCO+",
-    description:
-      "Acceso, rectificación, supresión, oposición, portabilidad y limitación. Cada solicitud genera un ticket con control automático de plazos.",
+    description: (
+      <>
+        Acceso, rectificación, supresión, oposición, portabilidad y limitación.
+        Cada solicitud genera un ticket con{" "}
+        <strong className="font-semibold text-white/90">
+          control automático de plazos
+        </strong>
+        .
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -72,8 +91,19 @@ const features = [
   },
   {
     title: "Trazabilidad blockchain",
-    description:
-      "Cada acción queda en una cadena de custodia inmutable. Evidencia matemática ante cualquier fiscalización de la autoridad.",
+    description: (
+      <>
+        Cada acción queda en una{" "}
+        <strong className="font-semibold text-white/90">
+          cadena de custodia inmutable
+        </strong>
+        .{" "}
+        <strong className="font-semibold text-white/90">
+          Evidencia matemática
+        </strong>{" "}
+        ante cualquier fiscalización de la autoridad.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -118,8 +148,19 @@ const features = [
   },
   {
     title: "Titulares extranjeros",
-    description:
-      "Identificación por RUT, pasaporte, ID extranjero o Tax ID. Formulario bilingüe español/inglés para clientes de cualquier país.",
+    description: (
+      <>
+        Identificación por{" "}
+        <strong className="font-semibold text-white/90">
+          RUT, pasaporte, ID extranjero o Tax ID
+        </strong>
+        .{" "}
+        <strong className="font-semibold text-white/90">
+          Formulario bilingüe
+        </strong>{" "}
+        español/inglés para clientes de cualquier país.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -146,8 +187,15 @@ const features = [
   },
   {
     title: "Alertas de plazos",
-    description:
-      "El panel de administración avisa antes de que venza cada solicitud, previniendo sanciones por incumplimiento de plazos legales.",
+    description: (
+      <>
+        El panel de administración avisa antes de que venza cada solicitud,{" "}
+        <strong className="font-semibold text-white/90">
+          previniendo sanciones
+        </strong>{" "}
+        por incumplimiento de plazos legales.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -176,8 +224,14 @@ const features = [
   },
   {
     title: "Portal web + app móvil",
-    description:
-      "Tus clientes gestionan su privacidad desde el portal o una app nativa. Tu equipo administra todo desde cualquier dispositivo.",
+    description: (
+      <>
+        Tus clientes gestionan su privacidad desde el{" "}
+        <strong className="font-semibold text-white/90">portal</strong> o una{" "}
+        <strong className="font-semibold text-white/90">app nativa</strong>. Tu
+        equipo administra todo desde cualquier dispositivo.
+      </>
+    ),
     icon: (
       <svg
         width="32"
@@ -225,15 +279,26 @@ export default function SolutionSection() {
             Todo el ciclo del dato, en una plataforma
           </p>
           <p className="text-white/50">
-            Desde la captura del consentimiento informado hasta el ejercicio de
-            derechos, con evidencia inalterable en cada paso.
+            Desde la captura del{" "}
+            <strong className="font-semibold text-white/90">
+              consentimiento informado
+            </strong>{" "}
+            hasta el{" "}
+            <strong className="font-semibold text-white/90">
+              ejercicio de derechos
+            </strong>
+            , con{" "}
+            <strong className="font-semibold text-white/90">
+              evidencia inalterable
+            </strong>{" "}
+            en cada paso.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (
             <Card key={feature.title}>
-              <div className="text-[#6366f1] mb-4">{feature.icon}</div>
+              <div className="text-[#56D1B2] mb-4">{feature.icon}</div>
               <h3 className="text-lg font-semibold text-white mb-2">
                 {feature.title}
               </h3>

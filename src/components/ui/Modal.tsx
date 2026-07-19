@@ -63,7 +63,7 @@ export default function Modal({ isOpen, onClose, children, title }: ModalProps) 
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-title"
-        className="bg-[#0f0f18] border border-white/10 rounded-2xl max-w-lg w-full p-6 relative"
+        className="bg-[#0f0f18] border border-white/10 rounded-none max-w-lg w-full p-6 relative"
       >
         <button
           onClick={onClose}
