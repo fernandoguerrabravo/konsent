@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/sections/HeroSection";
+import WebinarSection from "@/components/sections/WebinarSection";
 import IndustryTabs from "@/components/sections/IndustryTabs";
 import ChallengeSection from "@/components/sections/ChallengeSection";
 import SolutionSection from "@/components/sections/SolutionSection";
@@ -41,6 +42,7 @@ export default function Home() {
       <Navbar onOpenDemo={() => setIsDemoOpen(true)} />
       <main>
         <HeroSection onOpenDemo={() => setIsDemoOpen(true)} />
+        <WebinarSection />
         <IndustryTabs />
         <ChallengeSection />
         <SolutionSection />

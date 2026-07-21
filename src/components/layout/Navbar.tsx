@@ -7,6 +7,7 @@ interface NavbarProps {
 }
 
 const navLinks = [
+  { label: "Webinar", href: "#webinar" },
   { label: "El desafío", href: "#desafio" },
   { label: "Solución", href: "#solucion" },
   { label: "Blockchain", href: "#blockchain" },
