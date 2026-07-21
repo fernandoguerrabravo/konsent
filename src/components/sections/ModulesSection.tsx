@@ -253,7 +253,7 @@ export default function ModulesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {modules.map((module) => (
             <Card key={module.title}>
-              <div className="text-[#56D1B2] mb-4">{module.icon}</div>
+              <div className="text-[#169d75] mb-4">{module.icon}</div>
               <h3 className="text-lg font-semibold text-white mb-2">
                 {module.title}
               </h3>

@@ -47,11 +47,11 @@
   }
 
   .glass-card-hover:hover {
-    border-color: rgba(86, 209, 178, 0.3);
+    border-color: rgba(22, 157, 117, 0.3);
   }
 
   .gradient-text {
-    background: linear-gradient(to right, #2FB597, #56D1B2);
+    background: linear-gradient(to right, #0F7357, #169d75);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

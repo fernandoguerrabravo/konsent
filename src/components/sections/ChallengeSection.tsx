@@ -33,7 +33,7 @@ export default function ChallengeSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card>
-            <p className="text-4xl font-bold bg-gradient-to-r from-[#2FB597] to-[#7FDFC8] bg-clip-text text-transparent mb-2">
+            <p className="text-4xl font-bold bg-gradient-to-r from-[#0F7357] to-[#33B892] bg-clip-text text-transparent mb-2">
               20.000
             </p>
             <p className="text-white/50">
@@ -42,7 +42,7 @@ export default function ChallengeSection() {
           </Card>
 
           <Card>
-            <p className="text-4xl font-bold bg-gradient-to-r from-[#2FB597] to-[#7FDFC8] bg-clip-text text-transparent mb-2">
+            <p className="text-4xl font-bold bg-gradient-to-r from-[#0F7357] to-[#33B892] bg-clip-text text-transparent mb-2">
               30
             </p>
             <p className="text-white/50">
@@ -51,7 +51,7 @@ export default function ChallengeSection() {
           </Card>
 
           <Card>
-            <p className="text-4xl font-bold bg-gradient-to-r from-[#2FB597] to-[#7FDFC8] bg-clip-text text-transparent mb-2">
+            <p className="text-4xl font-bold bg-gradient-to-r from-[#0F7357] to-[#33B892] bg-clip-text text-transparent mb-2">
               8
             </p>
             <p className="text-white/50">

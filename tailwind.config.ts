@@ -16,37 +16,44 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // Brand palette derived from the Konsent logo (logo green: #56D1B2)
+        // Brand palette derived from the official Konsent logo (logo.svg)
+        // Green: #169d75 · Navy: #262c64
         brand: {
-          DEFAULT: "#56D1B2",
-          ink: "#07231E", // dark text for use on brand-colored surfaces
-          light: "#7FDFC8",
-          deep: "#0B3F35",
-          50: "#eafaf5",
-          100: "#cef2e7",
-          200: "#a3e8d5",
-          300: "#7FDFC8",
-          400: "#56D1B2",
-          500: "#2FB597",
-          600: "#1F9B80",
-          700: "#187C67",
-          800: "#135E4F",
-          900: "#0B3F35",
-          950: "#062A24",
+          DEFAULT: "#169d75",
+          ink: "#052E22", // dark text for use on brand-colored surfaces
+          light: "#33B892",
+          deep: "#0A3F30",
+          50: "#e9f6f1",
+          100: "#c9ebe0",
+          200: "#97d9c3",
+          300: "#5cc3a1",
+          400: "#33B892",
+          500: "#169d75",
+          600: "#128268",
+          700: "#0f6b55",
+          800: "#0c5544",
+          900: "#0A3F30",
+          950: "#06271f",
+        },
+        // Navy from the logo wordmark
+        navy: {
+          DEFAULT: "#262c64",
+          light: "#3a4189",
+          dark: "#191d45",
         },
         // Alias so any legacy `primary-*` usage stays on-brand
         primary: {
-          50: "#eafaf5",
-          100: "#cef2e7",
-          200: "#a3e8d5",
-          300: "#7FDFC8",
-          400: "#56D1B2",
-          500: "#2FB597",
-          600: "#1F9B80",
-          700: "#187C67",
-          800: "#135E4F",
-          900: "#0B3F35",
-          950: "#062A24",
+          50: "#e9f6f1",
+          100: "#c9ebe0",
+          200: "#97d9c3",
+          300: "#5cc3a1",
+          400: "#33B892",
+          500: "#169d75",
+          600: "#128268",
+          700: "#0f6b55",
+          800: "#0c5544",
+          900: "#0A3F30",
+          950: "#06271f",
         },
         dark: {
           50: "#f8fafc",
@@ -71,16 +78,16 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-hero":
-          "radial-gradient(ellipse 80% 50% at 50% 40%, rgba(86, 209, 178, 0.15) 0%, rgba(86, 209, 178, 0.05) 40%, transparent 70%)",
+          "radial-gradient(ellipse 80% 50% at 50% 40%, rgba(22, 157, 117, 0.15) 0%, rgba(22, 157, 117, 0.05) 40%, transparent 70%)",
         "gradient-cta":
-          "linear-gradient(135deg, rgba(11, 63, 53, 0.85) 0%, rgba(19, 94, 79, 0.8) 50%, rgba(6, 42, 36, 0.9) 100%)",
+          "linear-gradient(135deg, rgba(38, 44, 100, 0.9) 0%, rgba(15, 107, 85, 0.82) 55%, rgba(10, 63, 48, 0.92) 100%)",
         "gradient-card":
-          "linear-gradient(180deg, rgba(86, 209, 178, 0.03) 0%, rgba(127, 223, 200, 0.03) 100%)",
+          "linear-gradient(180deg, rgba(22, 157, 117, 0.03) 0%, rgba(51, 184, 146, 0.03) 100%)",
       },
       boxShadow: {
         card: "0 4px 6px -1px rgba(0, 0, 0, 0.3)",
         "card-hover":
-          "0 10px 15px -3px rgba(86, 209, 178, 0.12), 0 4px 6px -4px rgba(0, 0, 0, 0.3)",
+          "0 10px 15px -3px rgba(22, 157, 117, 0.12), 0 4px 6px -4px rgba(0, 0, 0, 0.3)",
       },
       borderRadius: {
         xl: "0.75rem",

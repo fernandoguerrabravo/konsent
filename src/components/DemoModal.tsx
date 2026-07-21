@@ -92,17 +92,17 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
   };
 
   const inputStyles =
-    "w-full bg-white/5 border border-white/10 rounded-none px-4 py-3 text-white placeholder:text-white/30 focus:border-[#56D1B2] focus:ring-1 focus:ring-[#56D1B2]/30 focus:outline-none transition-all";
+    "w-full bg-white/5 border border-white/10 rounded-none px-4 py-3 text-white placeholder:text-white/30 focus:border-[#169d75] focus:ring-1 focus:ring-[#169d75]/30 focus:outline-none transition-all";
   const labelStyles = "text-sm text-white/60 mb-1 block";
 
   if (submitted) {
     return (
       <Modal isOpen={isOpen} onClose={onClose} title="Agenda tu demostración">
         <div className="text-center py-6">
-          <div className="mx-auto w-16 h-16 bg-[#56D1B2]/20 rounded-none flex items-center justify-center mb-4">
+          <div className="mx-auto w-16 h-16 bg-[#169d75]/20 rounded-none flex items-center justify-center mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-[#56D1B2]"
+              className="h-8 w-8 text-[#169d75]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

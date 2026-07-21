@@ -298,7 +298,7 @@ export default function SolutionSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (
             <Card key={feature.title}>
-              <div className="text-[#56D1B2] mb-4">{feature.icon}</div>
+              <div className="text-[#169d75] mb-4">{feature.icon}</div>
               <h3 className="text-lg font-semibold text-white mb-2">
                 {feature.title}
               </h3>

@@ -10,13 +10,13 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
     <section className="relative overflow-hidden bg-[#0a0a0f]">
       {/* Radial gradient glow background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(86,209,178,0.15)_0%,rgba(86,209,178,0.05)_40%,transparent_70%)]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(22,157,117,0.15)_0%,rgba(22,157,117,0.05)_40%,transparent_70%)]" />
       </div>
 
       <div className="container mx-auto px-4 pt-28 pb-16 lg:pt-32 lg:pb-20 flex flex-col lg:flex-row items-center gap-12 relative z-10">
         {/* Left content column */}
         <div className="flex-1 space-y-6">
-          <span className="inline-flex items-center gap-2 bg-[#56D1B2]/10 border border-[#56D1B2]/30 text-[#56D1B2] px-4 py-1.5 rounded-none text-sm font-medium">
+          <span className="inline-flex items-center gap-2 bg-[#169d75]/10 border border-[#169d75]/30 text-[#169d75] px-4 py-1.5 rounded-none text-sm font-medium">
             Conforme a la Ley N° 21.719
           </span>
 
@@ -162,7 +162,7 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
               <span className="text-white/50 text-sm font-medium">
                 Cadena de custodia
               </span>
-              <span className="inline-flex items-center gap-1 bg-[#56D1B2]/10 text-[#56D1B2] px-2 py-0.5 rounded-none text-xs font-medium">
+              <span className="inline-flex items-center gap-1 bg-[#169d75]/10 text-[#169d75] px-2 py-0.5 rounded-none text-xs font-medium">
                 <svg
                   width="12"
                   height="12"
@@ -188,7 +188,7 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
                 <span className="text-white/50 text-xs">
                   Bloque #4 — reciente
                 </span>
-                <span className="inline-flex items-center bg-[#56D1B2]/10 text-[#56D1B2] px-2 py-0.5 rounded-none text-xs">
+                <span className="inline-flex items-center bg-[#169d75]/10 text-[#169d75] px-2 py-0.5 rounded-none text-xs">
                   Válido
                 </span>
               </div>

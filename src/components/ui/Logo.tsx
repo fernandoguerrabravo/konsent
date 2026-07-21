@@ -3,23 +3,30 @@ import Image from "next/image";
 interface LogoProps {
   className?: string;
   size?: "sm" | "md" | "lg";
+  /** Use the light variant (white wordmark) for dark backgrounds. Default: true */
+  light?: boolean;
 }
 
-export default function Logo({ className = "", size = "md" }: LogoProps) {
-  const sizes = {
-    sm: { height: 40 },
-    md: { height: 64 },
-    lg: { height: 80 },
-  };
+// Aspecto del logo oficial: 377.85 / 143.18 ≈ 2.64
+const ASPECT = 2.64;
 
-  const { height } = sizes[size];
+export default function Logo({
+  className = "",
+  size = "md",
+  light = true,
+}: LogoProps) {
+  const heights = { sm: 34, md: 52, lg: 68 };
+  const height = heights[size];
+  const width = Math.round(height * ASPECT);
 
   return (
     <Image
-      src="/logo.png"
+      src={light ? "/logo-light.svg" : "/logo.svg"}
       alt="Konsent"
-      width={height * 4}
+      width={width}
       height={height}
+      priority
+      unoptimized
       className={className}
       style={{ height: `${height}px`, width: "auto" }}
     />

@@ -63,7 +63,7 @@ export default function BlockchainSection() {
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left column — Explanation content */}
           <div className="flex-1">
-            <span className="inline-block text-sm text-[#56D1B2] mb-4">
+            <span className="inline-block text-sm text-[#169d75] mb-4">
               Diferenciador clave
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -88,7 +88,7 @@ export default function BlockchainSection() {
             <div className="space-y-6">
               {explanations.map((item) => (
                 <div key={item.number} className="flex gap-4">
-                  <div className="bg-[#56D1B2] text-white w-8 h-8 rounded-none flex items-center justify-center shrink-0 text-sm font-semibold">
+                  <div className="bg-[#169d75] text-white w-8 h-8 rounded-none flex items-center justify-center shrink-0 text-sm font-semibold">
                     {item.number}
                   </div>
                   <div>
@@ -110,7 +110,7 @@ export default function BlockchainSection() {
                 <span className="text-sm font-medium text-white">
                   Integridad de la cadena
                 </span>
-                <span className="inline-flex items-center gap-1 text-xs font-medium text-[#56D1B2] bg-[#56D1B2]/10 px-2 py-1 rounded-none">
+                <span className="inline-flex items-center gap-1 text-xs font-medium text-[#169d75] bg-[#169d75]/10 px-2 py-1 rounded-none">
                   142/142 OK
                 </span>
               </div>
@@ -121,7 +121,7 @@ export default function BlockchainSection() {
                   <div key={item.title}>
                     <div className="flex items-start gap-3 py-4">
                       {/* Checkmark icon */}
-                      <div className="text-[#56D1B2] mt-0.5">
+                      <div className="text-[#169d75] mt-0.5">
                         <svg
                           width="16"
                           height="16"
@@ -148,7 +148,7 @@ export default function BlockchainSection() {
                         </p>
                       </div>
                       {/* Integrity badge */}
-                      <span className="text-xs font-medium text-[#56D1B2] bg-[#56D1B2]/10 px-2 py-0.5 rounded-none">
+                      <span className="text-xs font-medium text-[#169d75] bg-[#169d75]/10 px-2 py-0.5 rounded-none">
                         Íntegro
                       </span>
                     </div>

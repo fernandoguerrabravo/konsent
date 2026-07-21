@@ -2,11 +2,11 @@ import { ButtonProps } from "@/types";
 
 const variantStyles = {
   primary:
-    "bg-[#56D1B2] hover:bg-[#7FDFC8] text-[#07231E] font-semibold shadow-lg shadow-[#56D1B2]/25",
+    "bg-[#169d75] hover:bg-[#33B892] text-[#07231E] font-semibold shadow-lg shadow-[#169d75]/25",
   secondary:
     "bg-white/5 border border-white/10 text-white hover:bg-white/10",
   outline:
-    "border border-[#56D1B2]/40 text-[#56D1B2] hover:border-[#56D1B2] hover:bg-[#56D1B2]/10",
+    "border border-[#169d75]/40 text-[#169d75] hover:border-[#169d75] hover:bg-[#169d75]/10",
 };
 
 const sizeStyles = {
@@ -29,7 +29,7 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`min-w-[44px] min-h-[44px] rounded-none font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#56D1B2]/50 focus:ring-offset-2 focus:ring-offset-[#0a0a0f] disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`min-w-[44px] min-h-[44px] rounded-none font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#169d75]/50 focus:ring-offset-2 focus:ring-offset-[#0a0a0f] disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {children}
     </button>
