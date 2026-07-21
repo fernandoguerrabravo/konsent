@@ -13,7 +13,7 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(22,157,117,0.15)_0%,rgba(22,157,117,0.05)_40%,transparent_70%)]" />
       </div>
 
-      <div className="container mx-auto px-4 pt-28 pb-16 lg:pt-32 lg:pb-20 flex flex-col lg:flex-row items-center gap-12 relative z-10">
+      <div className="container mx-auto px-4 py-16 lg:py-20 flex flex-col lg:flex-row items-center gap-12 relative z-10">
         {/* Left content column */}
         <div className="flex-1 space-y-6">
           <span className="inline-flex items-center gap-2 bg-[#169d75]/10 border border-[#169d75]/30 text-[#169d75] px-4 py-1.5 rounded-none text-sm font-medium">

@@ -7,7 +7,7 @@ export default function WebinarSection() {
   return (
     <section
       id="webinar"
-      className="py-16 md:py-20 bg-gradient-to-br from-[#262c64]/90 via-[#0f6b55]/70 to-[#0a3f30]/90 relative overflow-hidden"
+      className="pt-28 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-[#262c64]/90 via-[#0f6b55]/70 to-[#0a3f30]/90 relative overflow-hidden"
     >
       {/* Glow de marca */}
       <div className="absolute inset-0 pointer-events-none">

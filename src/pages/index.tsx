@@ -41,8 +41,8 @@ export default function Home() {
       </Head>
       <Navbar onOpenDemo={() => setIsDemoOpen(true)} />
       <main>
-        <HeroSection onOpenDemo={() => setIsDemoOpen(true)} />
         <WebinarSection />
+        <HeroSection onOpenDemo={() => setIsDemoOpen(true)} />
         <IndustryTabs />
         <ChallengeSection />
         <SolutionSection />
