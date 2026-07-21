@@ -1,5 +1,5 @@
 import Logo from "@/components/ui/Logo";
-import { DEMO_URL } from "@/lib/constants";
+import { DEMO_URL, PRIVACY_URL } from "@/lib/constants";
 
 const footerLinks = [
   { label: "Solución", href: "#solucion" },
@@ -31,6 +31,14 @@ export default function Footer() {
                 {link.label}
               </a>
             ))}
+            <a
+              href={PRIVACY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-white transition-colors duration-200"
+            >
+              Política de Privacidad
+            </a>
             <a
               href={DEMO_URL}
               target="_blank"

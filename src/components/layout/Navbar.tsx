@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "@/components/ui/Button";
 import Logo from "@/components/ui/Logo";
-import { DEMO_URL } from "@/lib/constants";
+import { DEMO_URL, PRIVACY_URL } from "@/lib/constants";
 
 const navLinks = [
   { label: "Webinar", href: "#webinar" },
@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Solución", href: "#solucion" },
   { label: "Blockchain", href: "#blockchain" },
   { label: "Módulos", href: "#modulos" },
+  { label: "Política de Privacidad", href: PRIVACY_URL, external: true },
 ];
 
 export default function Navbar() {
@@ -30,6 +31,9 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
+              {...(link.external
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
               className="text-white/70 hover:text-white transition-colors duration-200"
             >
               {link.label}
@@ -86,6 +90,9 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
+                {...(link.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
                 className="text-white/70 hover:text-white transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
