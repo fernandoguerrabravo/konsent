@@ -14,6 +14,9 @@ export default function Footer() {
           <div>
             <Logo size="sm" />
             <p className="text-white/50 text-sm mt-2">
+              Av. Apoquindo 7331, Oficina 345 · Las Condes, Santiago
+            </p>
+            <p className="text-white/50 text-sm mt-1">
               © 2026 Konsent · Cumplimiento Ley N° 21.719 · Chile
             </p>
           </div>
