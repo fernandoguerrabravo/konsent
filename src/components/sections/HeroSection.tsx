@@ -1,11 +1,8 @@
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
+import { DEMO_URL } from "@/lib/constants";
 
-interface HeroSectionProps {
-  onOpenDemo: () => void;
-}
-
-export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
+export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-[#0a0a0f]">
       {/* Radial gradient glow background */}
@@ -42,9 +39,11 @@ export default function HeroSection({ onOpenDemo }: HeroSectionProps) {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Button variant="primary" size="lg" onClick={onOpenDemo}>
-              Agendar una demostración
-            </Button>
+            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+              <Button variant="primary" size="lg">
+                Solicitar una demostración
+              </Button>
+            </a>
             <a href="#solucion">
               <Button variant="outline" size="lg">
                 Ver cómo funciona

@@ -1,10 +1,7 @@
 import { useState } from "react";
 import Button from "@/components/ui/Button";
 import Logo from "@/components/ui/Logo";
-
-interface NavbarProps {
-  onOpenDemo: () => void;
-}
+import { DEMO_URL } from "@/lib/constants";
 
 const navLinks = [
   { label: "Webinar", href: "#webinar" },
@@ -14,7 +11,7 @@ const navLinks = [
   { label: "Módulos", href: "#modulos" },
 ];
 
-export default function Navbar({ onOpenDemo }: NavbarProps) {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -42,9 +39,9 @@ export default function Navbar({ onOpenDemo }: NavbarProps) {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Button size="sm" onClick={onOpenDemo}>
-            Agendar demo
-          </Button>
+          <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+            <Button size="sm">Solicitar demo</Button>
+          </a>
         </div>
 
         {/* Mobile hamburger button */}
@@ -95,9 +92,11 @@ export default function Navbar({ onOpenDemo }: NavbarProps) {
                 {link.label}
               </a>
             ))}
-            <Button size="sm" onClick={onOpenDemo}>
-              Agendar demo
-            </Button>
+            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+              <Button size="sm" className="w-full">
+                Solicitar demo
+              </Button>
+            </a>
           </div>
         </div>
       )}

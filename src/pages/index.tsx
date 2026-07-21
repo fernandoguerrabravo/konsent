@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Head from "next/head";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -10,11 +9,8 @@ import SolutionSection from "@/components/sections/SolutionSection";
 import BlockchainSection from "@/components/sections/BlockchainSection";
 import ModulesSection from "@/components/sections/ModulesSection";
 import CTASection from "@/components/sections/CTASection";
-import DemoModal from "@/components/DemoModal";
 
 export default function Home() {
-  const [isDemoOpen, setIsDemoOpen] = useState(false);
-
   return (
     <>
       <Head>
@@ -39,19 +35,18 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/logo.png" />
       </Head>
-      <Navbar onOpenDemo={() => setIsDemoOpen(true)} />
+      <Navbar />
       <main>
         <WebinarSection />
-        <HeroSection onOpenDemo={() => setIsDemoOpen(true)} />
+        <HeroSection />
         <IndustryTabs />
         <ChallengeSection />
         <SolutionSection />
         <BlockchainSection />
         <ModulesSection />
-        <CTASection onOpenDemo={() => setIsDemoOpen(true)} />
+        <CTASection />
       </main>
-      <Footer onOpenDemo={() => setIsDemoOpen(true)} />
-      <DemoModal isOpen={isDemoOpen} onClose={() => setIsDemoOpen(false)} />
+      <Footer />
     </>
   );
 }

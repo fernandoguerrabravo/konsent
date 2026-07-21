@@ -1,10 +1,7 @@
 import Button from "@/components/ui/Button";
+import { DEMO_URL } from "@/lib/constants";
 
-interface CTASectionProps {
-  onOpenDemo: () => void;
-}
-
-export default function CTASection({ onOpenDemo }: CTASectionProps) {
+export default function CTASection() {
   return (
     <section className="py-24 bg-gradient-to-br from-[#262c64]/90 via-[#0f6b55]/80 to-[#0a3f30]/90 relative overflow-hidden">
       {/* Subtle glow */}
@@ -25,9 +22,9 @@ export default function CTASection({ onOpenDemo }: CTASectionProps) {
           llegarán preparadas; las que esperen, improvisarán bajo presión.
         </p>
         <div className="mt-8">
-          <Button size="lg" onClick={onOpenDemo}>
-            Agendar una demostración
-          </Button>
+          <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+            <Button size="lg">Solicitar una demostración</Button>
+          </a>
         </div>
         <div className="mt-6 space-y-1">
           <p className="text-white/50">gabriela@konsent.cl</p>
