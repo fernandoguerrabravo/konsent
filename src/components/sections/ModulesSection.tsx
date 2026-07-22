@@ -1,4 +1,5 @@
 import Card from "@/components/ui/Card";
+import Kicker from "@/components/ui/Kicker";
 
 const modules = [
   {
@@ -236,14 +237,12 @@ export default function ModulesSection() {
   return (
     <section id="modulos" className="py-24 bg-[#141833]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Un ecosistema completo
-          </h2>
-          <p className="text-xl text-white/90 mb-4">
+        <div className="max-w-3xl mb-14">
+          <Kicker index="04">Un ecosistema completo</Kicker>
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 leading-[1.05]">
             Seis módulos que trabajan juntos
-          </p>
-          <p className="text-[#9aa1af]">
+          </h2>
+          <p className="text-[#9aa1af] text-lg leading-relaxed">
             Todo lo que tu empresa necesita para cumplir la{" "}
             <strong className="font-semibold text-white/90">Ley 21.719</strong>,
             integrado en una sola plataforma.

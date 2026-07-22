@@ -1,34 +1,46 @@
 import Button from "@/components/ui/Button";
+import Kicker from "@/components/ui/Kicker";
 import { DEMO_URL } from "@/lib/constants";
 
 export default function CTASection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-[#262c64]/90 via-[#0f6b55]/80 to-[#0a3f30]/90 relative overflow-hidden">
-      {/* Subtle glow */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(22,157,117,0.2)_0%,transparent_70%)]" />
-      </div>
+    <section className="relative overflow-hidden bg-[#141833] border-t border-[#169d75]/40">
+      <div className="bg-grid absolute inset-0 pointer-events-none" />
 
-      <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-white">
-          Prepárate antes de diciembre de 2026
-        </h2>
-        <p className="text-white/70 text-lg mt-4 max-w-2xl mx-auto">
-          <strong className="font-semibold text-white">
-            El plazo es justo, no holgado.
-          </strong>{" "}
-          Las empresas que{" "}
-          <strong className="font-semibold text-white">empiecen ahora</strong>{" "}
-          llegarán preparadas; las que esperen, improvisarán bajo presión.
-        </p>
-        <div className="mt-8">
+      <div className="container mx-auto px-4 py-28 relative z-10">
+        <div className="max-w-4xl">
+          <Kicker index="05">Ventana de cumplimiento</Kicker>
+          <h2 className="text-4xl md:text-6xl font-semibold text-white leading-[1.02] mb-6">
+            Prepárate antes de{" "}
+            <span className="text-[#169d75]">diciembre de 2026.</span>
+          </h2>
+          <p className="text-[#9aa1af] text-lg max-w-2xl leading-relaxed mb-10">
+            <strong className="font-semibold text-white">
+              El plazo es justo, no holgado.
+            </strong>{" "}
+            Las empresas que{" "}
+            <strong className="font-semibold text-white">empiecen ahora</strong>{" "}
+            llegarán preparadas; las que esperen, improvisarán bajo presión.
+          </p>
+
           <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
             <Button size="lg">Solicitar una demostración</Button>
           </a>
-        </div>
-        <div className="mt-6 space-y-1">
-          <p className="text-[#9aa1af]">gabriela@konsent.cl</p>
-          <p className="text-[#9aa1af]">+56 9 7779 4532</p>
+
+          <div className="mt-12 pt-8 border-t border-[#5f636f]/30 flex flex-col sm:flex-row gap-6 sm:gap-12">
+            <div>
+              <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#5f636f] mb-1">
+                Correo
+              </p>
+              <p className="text-white font-mono text-sm">gabriela@konsent.cl</p>
+            </div>
+            <div>
+              <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#5f636f] mb-1">
+                Teléfono
+              </p>
+              <p className="text-white font-mono text-sm">+56 9 7779 4532</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

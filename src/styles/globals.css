@@ -25,12 +25,18 @@
     text-wrap: pretty;
   }
 
-  /* Titulos: reparte las líneas de forma equilibrada para una lectura continua */
+  /* Titulos: fuente display + reparto equilibrado para una lectura continua */
   h1,
   h2,
   h3,
   h4 {
+    font-family: var(--font-display), "Space Grotesk", system-ui, sans-serif;
+    letter-spacing: -0.02em;
     text-wrap: balance;
+  }
+
+  h1 {
+    letter-spacing: -0.035em;
   }
 
   /* Párrafos y textos de lectura: evita que quede una sola palabra en la última línea */
@@ -83,5 +89,26 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Retícula sutil de fondo (estilo editorial, reemplaza los glows) */
+  .bg-grid {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.04) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(
+      ellipse 70% 60% at 50% 0%,
+      #000 40%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 70% 60% at 50% 0%,
+      #000 40%,
+      transparent 100%
+    );
   }
 }

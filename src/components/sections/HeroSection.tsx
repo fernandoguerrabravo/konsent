@@ -1,27 +1,25 @@
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
+import Kicker from "@/components/ui/Kicker";
 import { DEMO_URL } from "@/lib/constants";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-[#141833]">
-      {/* Radial gradient glow background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(22,157,117,0.15)_0%,rgba(22,157,117,0.05)_40%,transparent_70%)]" />
-      </div>
+    <section className="relative overflow-hidden bg-[#141833] border-b border-[#5f636f]/20">
+      {/* Retícula editorial sutil */}
+      <div className="bg-grid absolute inset-0 pointer-events-none" />
 
-      <div className="container mx-auto px-4 py-16 lg:py-20 flex flex-col lg:flex-row items-center gap-12 relative z-10">
+      <div className="container mx-auto px-4 py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-14 relative z-10">
         {/* Left content column */}
-        <div className="flex-1 space-y-6">
-          <span className="inline-flex items-center gap-2 bg-[#169d75]/10 border border-[#169d75]/30 text-[#169d75] px-4 py-1.5 rounded-none text-sm font-medium">
-            Conforme a la Ley N° 21.719
-          </span>
+        <div className="flex-1 space-y-7">
+          <Kicker>Conforme a la Ley N° 21.719</Kicker>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Cumple la Ley 21.719 sin fricción.
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white leading-[0.98]">
+            Cumple la Ley 21.719{" "}
+            <span className="text-[#169d75]">sin fricción.</span>
           </h1>
 
-          <p className="text-white/70 text-lg max-w-xl">
+          <p className="text-[#9aa1af] text-lg max-w-xl leading-relaxed">
             El sistema integral de{" "}
             <strong className="font-semibold text-white">
               gestión de consentimiento

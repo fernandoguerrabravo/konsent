@@ -1,20 +1,17 @@
 import Card from "@/components/ui/Card";
+import Kicker from "@/components/ui/Kicker";
 
 export default function ChallengeSection() {
   return (
     <section id="desafio" className="py-24 bg-[#262c64]">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            El desafío
-          </h2>
-          <p className="text-xl text-white/90 mb-4">
-            La <strong className="font-semibold text-white">Ley 21.719</strong>{" "}
-            llega en <strong className="font-semibold text-white">2026</strong>.
-            <br />
+        <div className="max-w-3xl mb-14">
+          <Kicker index="01">El desafío</Kicker>
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 leading-[1.05]">
+            La <span className="text-[#33B892]">Ley 21.719</span> llega en 2026.
             El incumplimiento cuesta caro.
-          </p>
-          <p className="text-[#9aa1af]">
+          </h2>
+          <p className="text-[#c3c7d0] text-lg leading-relaxed">
             Toda empresa que trate{" "}
             <strong className="font-semibold text-white/90">
               datos personales

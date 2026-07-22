@@ -1,4 +1,5 @@
 import Card from "@/components/ui/Card";
+import Kicker from "@/components/ui/Kicker";
 
 const features = [
   {
@@ -271,14 +272,12 @@ export default function SolutionSection() {
   return (
     <section id="solucion" className="py-24 bg-[#141833]">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            La solución
-          </h2>
-          <p className="text-xl text-white/90 mb-4">
+        <div className="max-w-3xl mb-14">
+          <Kicker index="02">La solución</Kicker>
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 leading-[1.05]">
             Todo el ciclo del dato, en una plataforma
-          </p>
-          <p className="text-[#9aa1af]">
+          </h2>
+          <p className="text-[#9aa1af] text-lg leading-relaxed">
             Desde la captura del{" "}
             <strong className="font-semibold text-white/90">
               consentimiento informado

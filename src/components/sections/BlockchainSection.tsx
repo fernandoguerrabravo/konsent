@@ -1,3 +1,5 @@
+import Kicker from "@/components/ui/Kicker";
+
 export default function BlockchainSection() {
   const explanations = [
     {
@@ -63,13 +65,11 @@ export default function BlockchainSection() {
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left column — Explanation content */}
           <div className="flex-1">
-            <span className="inline-block text-sm text-[#169d75] mb-4">
-              Diferenciador clave
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <Kicker index="03">Diferenciador clave</Kicker>
+            <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 leading-[1.05]">
               Evidencia que no se puede alterar
             </h2>
-            <p className="text-[#9aa1af] mb-8">
+            <p className="text-[#9aa1af] text-lg leading-relaxed mb-8">
               La Ley 21.719 exige{" "}
               <strong className="font-semibold text-white/90">
                 responsabilidad proactiva
