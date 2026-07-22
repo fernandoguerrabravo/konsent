@@ -30,14 +30,15 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-display), "Space Grotesk", system-ui, sans-serif;
+    font-family: var(--font-inter), Inter, system-ui, sans-serif;
+    font-weight: 600;
     letter-spacing: -0.02em;
     text-wrap: balance;
     color: #262c64;
   }
 
   h1 {
-    letter-spacing: -0.035em;
+    letter-spacing: -0.03em;
   }
 
   /* Párrafos y textos de lectura: evita que quede una sola palabra en la última línea */

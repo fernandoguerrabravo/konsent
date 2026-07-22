@@ -1,17 +1,10 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["500", "600", "700"],
   display: "swap",
 });
 
@@ -24,9 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div
-      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans`}
-    >
+    <div className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
       <Component {...pageProps} />
     </div>
   );

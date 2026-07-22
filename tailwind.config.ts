@@ -82,12 +82,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
-        display: [
-          "var(--font-display)",
-          "Space Grotesk",
-          "system-ui",
-          "sans-serif",
-        ],
+        display: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
         mono: [
           "var(--font-mono)",
           "JetBrains Mono",
