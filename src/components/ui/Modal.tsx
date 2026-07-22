@@ -63,12 +63,12 @@ export default function Modal({ isOpen, onClose, children, title }: ModalProps) 
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-title"
-        className="bg-[#0f0f18] border border-[#5f636f]/30 rounded-none max-w-lg w-full p-6 relative"
+        className="bg-[#0f0f18] border border-[#E7E9EE] rounded-xl max-w-lg w-full p-6 relative"
       >
         <button
           onClick={onClose}
           aria-label="Cerrar"
-          className="absolute top-4 right-4 text-[#9aa1af] hover:text-white transition-colors"
+          className="absolute top-4 right-4 text-[#5f636f] hover:text-[#262c64] transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

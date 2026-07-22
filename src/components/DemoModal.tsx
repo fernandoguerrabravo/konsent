@@ -92,14 +92,14 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
   };
 
   const inputStyles =
-    "w-full bg-white/5 border border-[#5f636f]/30 rounded-none px-4 py-3 text-white placeholder:text-white/30 focus:border-[#169d75] focus:ring-1 focus:ring-[#169d75]/30 focus:outline-none transition-all";
-  const labelStyles = "text-sm text-[#9aa1af] mb-1 block";
+    "w-full bg-white/5 border border-[#E7E9EE] rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:border-[#169d75] focus:ring-1 focus:ring-[#169d75]/30 focus:outline-none transition-all";
+  const labelStyles = "text-sm text-[#5f636f] mb-1 block";
 
   if (submitted) {
     return (
       <Modal isOpen={isOpen} onClose={onClose} title="Agenda tu demostración">
         <div className="text-center py-6">
-          <div className="mx-auto w-16 h-16 bg-[#169d75]/20 rounded-none flex items-center justify-center mb-4">
+          <div className="mx-auto w-16 h-16 bg-[#169d75]/20 rounded-xl flex items-center justify-center mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8 text-[#169d75]"
@@ -118,7 +118,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           <h3 className="text-xl font-semibold text-white mb-2">
             ¡Solicitud enviada!
           </h3>
-          <p className="text-[#9aa1af]">
+          <p className="text-[#5f636f]">
             Gracias por tu interés en Konsent. Te contactaremos muy pronto al
             correo que nos dejaste para coordinar tu demostración.
           </p>
@@ -129,7 +129,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title="Agenda tu demostración">
-      <p className="text-[#9aa1af] mb-6">
+      <p className="text-[#5f636f] mb-6">
         Déjanos tus datos y te contactamos en menos de 24 horas para coordinar
         una demo personalizada.
       </p>
@@ -228,7 +228,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           )}
         </div>
 
-        <p className="text-xs text-[#9aa1af] mt-4 leading-relaxed">
+        <p className="text-xs text-[#5f636f] mt-4 leading-relaxed">
           Al enviar este formulario, consientes que Konsent SpA trate tus datos personales con la finalidad de contactarte y coordinar una demostración del servicio, conforme a la Ley N° 21.719 de Protección de Datos Personales.
         </p>
 

@@ -7,14 +7,9 @@ export default function WebinarSection() {
   return (
     <section
       id="webinar"
-      className="pt-28 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-[#262c64]/90 via-[#0f6b55]/70 to-[#0a3f30]/90 relative overflow-hidden"
+      className="pt-28 pb-16 md:pt-32 md:pb-20 bg-[#F0FAF6] border-b border-[#E7E9EE]"
     >
-      {/* Glow de marca */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(22,157,117,0.25)_0%,transparent_70%)]" />
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
           {/* Banner */}
           <a
@@ -22,7 +17,7 @@ export default function WebinarSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Registrarse al webinar de Konsent"
-            className="block w-full max-w-sm shrink-0 border border-[#5f636f]/30 shadow-2xl transition-transform duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#169d75]"
+            className="block w-full max-w-sm shrink-0 rounded-2xl overflow-hidden border border-[#E7E9EE] shadow-[0_24px_60px_-24px_rgba(38,44,100,0.25)] transition-transform duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#169d75]"
           >
             <Image
               src="/banner.jpeg"
@@ -36,18 +31,18 @@ export default function WebinarSection() {
 
           {/* Contenido */}
           <div className="flex-1 text-center lg:text-left">
-            <span className="inline-flex items-center gap-2 bg-[#169d75]/15 border border-[#169d75]/40 text-[#33B892] px-4 py-1.5 text-sm font-medium">
-              <span className="w-2 h-2 bg-[#33B892] inline-block animate-pulse" />
+            <span className="inline-flex items-center gap-2 bg-white border border-[#169d75]/30 text-[#169d75] px-4 py-1.5 rounded-full text-sm font-medium">
+              <span className="w-2 h-2 bg-[#169d75] rounded-full inline-block animate-pulse" />
               Webinar en vivo
             </span>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-white mt-5 mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#262c64] mt-5 mb-4 leading-[1.1]">
               Prepárate para la Ley 21.719 en nuestro próximo webinar
             </h2>
 
-            <p className="text-white/70 text-lg max-w-xl mx-auto lg:mx-0 mb-8">
+            <p className="text-[#5f636f] text-lg max-w-xl mx-auto lg:mx-0 mb-8">
               Únete a nuestros expertos y descubre, paso a paso, cómo{" "}
-              <strong className="font-semibold text-white">
+              <strong className="font-semibold text-[#262c64]">
                 cumplir la normativa sin fricción
               </strong>{" "}
               y proteger a tu empresa antes de diciembre de 2026. Cupos

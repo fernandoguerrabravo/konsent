@@ -5,7 +5,7 @@ import { DEMO_URL } from "@/lib/constants";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-[#141833] border-b border-[#5f636f]/20">
+    <section className="relative overflow-hidden bg-white border-b border-[#5f636f]/20">
       {/* Retícula editorial sutil */}
       <div className="bg-grid absolute inset-0 pointer-events-none" />
 
@@ -14,26 +14,26 @@ export default function HeroSection() {
         <div className="flex-1 space-y-7">
           <Kicker>Conforme a la Ley N° 21.719</Kicker>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white leading-[0.98]">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-[#262c64] leading-[0.98]">
             Cumple la Ley 21.719{" "}
             <span className="text-[#169d75]">sin fricción.</span>
           </h1>
 
-          <p className="text-[#9aa1af] text-lg max-w-xl leading-relaxed">
+          <p className="text-[#5f636f] text-lg max-w-xl leading-relaxed">
             El sistema integral de{" "}
-            <strong className="font-semibold text-white">
+            <strong className="font-semibold text-[#262c64]">
               gestión de consentimiento
             </strong>{" "}
             y{" "}
-            <strong className="font-semibold text-white">
+            <strong className="font-semibold text-[#262c64]">
               derechos de datos personales
             </strong>{" "}
             para cualquier empresa en Chile. Con{" "}
-            <strong className="font-semibold text-white">
+            <strong className="font-semibold text-[#262c64]">
               trazabilidad blockchain
             </strong>{" "}
             y{" "}
-            <strong className="font-semibold text-white">validez legal</strong>.
+            <strong className="font-semibold text-[#262c64]">validez legal</strong>.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -153,13 +153,13 @@ export default function HeroSection() {
 
         {/* Right visualization column — Blockchain card */}
         <div className="hidden lg:block flex-1 max-w-md w-full">
-          <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-6 backdrop-blur-sm">
+          <div className="bg-white border border-[#E7E9EE] rounded-2xl p-6 shadow-[0_24px_60px_-24px_rgba(38,44,100,0.25)]">
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
-              <span className="text-[#9aa1af] text-sm font-medium">
+              <span className="text-[#5f636f] text-sm font-medium">
                 Cadena de custodia
               </span>
-              <span className="inline-flex items-center gap-1 bg-[#169d75]/10 text-[#169d75] px-2 py-0.5 rounded-none text-xs font-medium">
+              <span className="inline-flex items-center gap-1 bg-[#169d75]/10 text-[#169d75] px-2 py-0.5 rounded-xl text-xs font-medium">
                 <svg
                   width="12"
                   height="12"
@@ -180,57 +180,57 @@ export default function HeroSection() {
             </div>
 
             {/* Block #4 */}
-            <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-4 mb-1">
+            <div className="bg-[#F7F8FA] border border-[#E7E9EE] rounded-xl p-4 mb-1">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[#9aa1af] text-xs">
+                <span className="text-[#5f636f] text-xs">
                   Bloque #4 — reciente
                 </span>
-                <span className="inline-flex items-center bg-[#169d75]/10 text-[#169d75] px-2 py-0.5 rounded-none text-xs">
+                <span className="inline-flex items-center bg-[#169d75]/10 text-[#169d75] px-2 py-0.5 rounded-xl text-xs">
                   Válido
                 </span>
               </div>
-              <p className="text-white text-sm font-medium mb-1">
+              <p className="text-[#262c64] text-sm font-medium mb-1">
                 Solicitud de acceso — ARQ-2025-00312
               </p>
-              <p className="text-[#9aa1af] text-xs font-mono truncate">
+              <p className="text-[#5f636f] text-xs font-mono truncate">
                 sha256:F2A91C4E8B37D065A1F8C3E2B9470D6A…
               </p>
             </div>
 
             {/* Connector */}
             <div className="flex justify-center py-1">
-              <div className="h-6 border-l-2 border-dashed border-white/[0.1]"></div>
+              <div className="h-6 border-l-2 border-dashed border-[#E7E9EE]"></div>
             </div>
 
             {/* Block #3 */}
-            <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-4 mb-1">
+            <div className="bg-[#F7F8FA] border border-[#E7E9EE] rounded-xl p-4 mb-1">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[#9aa1af] text-xs">Bloque #3</span>
+                <span className="text-[#5f636f] text-xs">Bloque #3</span>
               </div>
-              <p className="text-white text-sm font-medium mb-1">
+              <p className="text-[#262c64] text-sm font-medium mb-1">
                 Preferencias actualizadas
               </p>
-              <p className="text-[#9aa1af] text-xs font-mono truncate">
+              <p className="text-[#5f636f] text-xs font-mono truncate">
                 sha256:B7D3F1A9C2E046B8D5F3A1C9E2B7D4F0…
               </p>
             </div>
 
             {/* Connector */}
             <div className="flex justify-center py-1">
-              <div className="h-6 border-l-2 border-dashed border-white/[0.1]"></div>
+              <div className="h-6 border-l-2 border-dashed border-[#E7E9EE]"></div>
             </div>
 
             {/* Block #1 */}
-            <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-4">
+            <div className="bg-[#F7F8FA] border border-[#E7E9EE] rounded-xl p-4">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[#9aa1af] text-xs">
+                <span className="text-[#5f636f] text-xs">
                   Bloque #1 — génesis
                 </span>
               </div>
-              <p className="text-white text-sm font-medium mb-1">
+              <p className="text-[#262c64] text-sm font-medium mb-1">
                 Consentimiento inicial registrado
               </p>
-              <p className="text-[#9aa1af] text-xs font-mono truncate">
+              <p className="text-[#5f636f] text-xs font-mono truncate">
                 sha256:A3F8B2C1D5E9F4A7B2C6D0E3F7A1B5C9…
               </p>
             </div>

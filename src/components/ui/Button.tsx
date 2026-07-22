@@ -2,11 +2,10 @@ import { ButtonProps } from "@/types";
 
 const variantStyles = {
   primary:
-    "bg-[#169d75] hover:bg-[#33B892] text-[#07231E] font-semibold shadow-lg shadow-[#169d75]/25",
+    "bg-[#169d75] hover:bg-[#128268] text-white font-semibold shadow-sm shadow-[#169d75]/20",
   secondary:
-    "bg-white/5 border border-[#5f636f]/30 text-white hover:bg-white/10",
-  outline:
-    "border border-[#169d75]/40 text-[#169d75] hover:border-[#169d75] hover:bg-[#169d75]/10",
+    "bg-[#F2F4F6] border border-[#E7E9EE] text-[#262c64] hover:bg-[#E9ECEF]",
+  outline: "border border-[#169d75]/50 text-[#169d75] hover:bg-[#169d75]/10",
 };
 
 const sizeStyles = {
@@ -29,7 +28,7 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`min-w-[44px] min-h-[44px] rounded-none font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#169d75]/50 focus:ring-offset-2 focus:ring-offset-[#141833] disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`min-w-[44px] min-h-[44px] rounded-xl font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#169d75]/50 focus:ring-offset-2 focus:ring-offset-white disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {children}
     </button>

@@ -18,11 +18,11 @@ export default function Navbar() {
   return (
     <nav
       aria-label="Navegación principal"
-      className="fixed top-0 w-full z-50 bg-[rgba(20,24,51,0.8)] backdrop-blur-xl border-b border-[#5f636f]/25"
+      className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-[#E7E9EE]"
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#" aria-label="Konsent - Inicio">
-          <Logo size="md" />
+          <Logo size="md" light={false} />
         </a>
 
         {/* Desktop nav links */}
@@ -34,7 +34,7 @@ export default function Navbar() {
               {...(link.external
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              className="text-white/70 hover:text-white transition-colors duration-200"
+              className="text-[#5f636f] hover:text-[#262c64] transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* Mobile hamburger button */}
         <button
           type="button"
-          className="md:hidden text-white p-2"
+          className="md:hidden text-[#262c64] p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={isMenuOpen}
@@ -84,7 +84,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-[#5f636f]/25 bg-[rgba(20,24,51,0.95)] backdrop-blur-xl">
+        <div className="md:hidden border-t border-[#E7E9EE] bg-white/95 backdrop-blur-xl">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
@@ -93,7 +93,7 @@ export default function Navbar() {
                 {...(link.external
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="text-[#5f636f] hover:text-[#262c64] transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}

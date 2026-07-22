@@ -8,7 +8,7 @@ export default function BlockchainSection() {
       description: (
         <>
           Una{" "}
-          <strong className="font-semibold text-white/90">
+          <strong className="font-semibold text-[#262c64]">
             huella digital única
           </strong>
           . Si el contenido cambia un carácter, el hash es completamente
@@ -22,7 +22,7 @@ export default function BlockchainSection() {
       description: (
         <>
           Modificar un evento pasado{" "}
-          <strong className="font-semibold text-white/90">
+          <strong className="font-semibold text-[#262c64]">
             invalida todos los bloques siguientes
           </strong>
           . La manipulación es detectable al instante.
@@ -35,7 +35,7 @@ export default function BlockchainSection() {
       description: (
         <>
           Cualquier alteración se detecta{" "}
-          <strong className="font-semibold text-white/90">
+          <strong className="font-semibold text-[#262c64]">
             sin necesidad de un auditor externo
           </strong>
           . Tu mejor defensa ante la APDP.
@@ -60,26 +60,26 @@ export default function BlockchainSection() {
   ];
 
   return (
-    <section id="blockchain" className="py-24 bg-[#1b2048]">
+    <section id="blockchain" className="py-24 bg-[#F7F8FA]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left column — Explanation content */}
           <div className="flex-1">
             <Kicker index="03">Diferenciador clave</Kicker>
-            <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 leading-[1.05]">
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#262c64] mb-6 leading-[1.05]">
               Evidencia que no se puede alterar
             </h2>
-            <p className="text-[#9aa1af] text-lg leading-relaxed mb-8">
+            <p className="text-[#5f636f] text-lg leading-relaxed mb-8">
               La Ley 21.719 exige{" "}
-              <strong className="font-semibold text-white/90">
+              <strong className="font-semibold text-[#262c64]">
                 responsabilidad proactiva
               </strong>
               : demostrar activamente el cumplimiento. Nuestra{" "}
-              <strong className="font-semibold text-white/90">
+              <strong className="font-semibold text-[#262c64]">
                 cadena de custodia
               </strong>{" "}
               lo hace{" "}
-              <strong className="font-semibold text-white/90">
+              <strong className="font-semibold text-[#262c64]">
                 matemáticamente imposible de falsificar
               </strong>
               .
@@ -88,14 +88,14 @@ export default function BlockchainSection() {
             <div className="space-y-6">
               {explanations.map((item) => (
                 <div key={item.number} className="flex gap-4">
-                  <div className="bg-[#169d75] text-white w-8 h-8 rounded-none flex items-center justify-center shrink-0 text-sm font-semibold">
+                  <div className="bg-[#169d75] text-white w-9 h-9 rounded-full flex items-center justify-center shrink-0 text-sm font-semibold">
                     {item.number}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white mb-1">
+                    <h3 className="font-semibold text-[#262c64] mb-1">
                       {item.title}
                     </h3>
-                    <p className="text-[#9aa1af] text-sm">{item.description}</p>
+                    <p className="text-[#5f636f] text-sm">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -104,13 +104,13 @@ export default function BlockchainSection() {
 
           {/* Right column — Visual integrity checker */}
           <div className="flex-1">
-            <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-6 backdrop-blur-sm">
+            <div className="bg-[#F7F8FA] border border-[#E7E9EE] rounded-xl p-6 backdrop-blur-sm">
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
-                <span className="text-sm font-medium text-white">
+                <span className="text-sm font-medium text-[#262c64]">
                   Integridad de la cadena
                 </span>
-                <span className="inline-flex items-center gap-1 text-xs font-medium text-[#169d75] bg-[#169d75]/10 px-2 py-1 rounded-none">
+                <span className="inline-flex items-center gap-1 text-xs font-medium text-[#169d75] bg-[#169d75]/10 px-2 py-1 rounded-xl">
                   142/142 OK
                 </span>
               </div>
@@ -140,15 +140,15 @@ export default function BlockchainSection() {
                         </svg>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-sm font-semibold text-white">
+                        <h4 className="text-sm font-semibold text-[#262c64]">
                           {item.title}
                         </h4>
-                        <p className="text-xs text-[#9aa1af] mt-0.5">
+                        <p className="text-xs text-[#5f636f] mt-0.5">
                           {item.detail}
                         </p>
                       </div>
                       {/* Integrity badge */}
-                      <span className="text-xs font-medium text-[#169d75] bg-[#169d75]/10 px-2 py-0.5 rounded-none">
+                      <span className="text-xs font-medium text-[#169d75] bg-[#169d75]/10 px-2 py-0.5 rounded-xl">
                         Íntegro
                       </span>
                     </div>

@@ -8,15 +8,15 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#5f636f]/25 bg-[#141833]">
+    <footer className="border-t border-[#E7E9EE] bg-white">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 text-center md:text-left">
           <div>
-            <Logo size="sm" />
-            <p className="text-[#9aa1af] text-sm mt-2">
+            <Logo size="sm" light={false} />
+            <p className="text-[#5f636f] text-sm mt-2">
               Av. Apoquindo 7331, Oficina 345 · Las Condes, Santiago
             </p>
-            <p className="text-[#9aa1af] text-sm mt-1">
+            <p className="text-[#5f636f] text-sm mt-1">
               © 2026 Konsent · Cumplimiento Ley N° 21.719 · Chile
             </p>
           </div>
@@ -26,7 +26,7 @@ export default function Footer() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[#9aa1af] hover:text-white transition-colors duration-200"
+                className="text-[#5f636f] hover:text-[#262c64] transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -35,7 +35,7 @@ export default function Footer() {
               href={PRIVACY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#9aa1af] hover:text-white transition-colors duration-200"
+              className="text-[#5f636f] hover:text-[#262c64] transition-colors duration-200"
             >
               Política de Privacidad
             </a>
@@ -43,7 +43,7 @@ export default function Footer() {
               href={DEMO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#9aa1af] hover:text-white transition-colors duration-200"
+              className="text-[#5f636f] hover:text-[#262c64] transition-colors duration-200"
             >
               Solicitar demo
             </a>

@@ -40,9 +40,9 @@ export default function IndustryTabs() {
   const activeIndustry = industries.find((ind) => ind.id === activeTab);
 
   return (
-    <section className="pt-8 pb-16 bg-[#141833]">
+    <section className="pt-8 pb-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#262c64] text-center mb-8">
           Diseñado para cualquier industria
         </h2>
 
@@ -58,7 +58,7 @@ export default function IndustryTabs() {
         </div>
 
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-white/70 text-lg">
+          <p className="text-[#5f636f] text-lg">
             {activeIndustry?.description}
           </p>
         </div>

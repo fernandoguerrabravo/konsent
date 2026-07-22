@@ -7,11 +7,11 @@ const features = [
     description: (
       <>
         Captura{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           consentimiento informado por finalidad
         </strong>
         , distinguiendo lo obligatorio de lo opcional. Con{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           timestamp, IP y hash
         </strong>{" "}
         de la política aceptada.
@@ -58,7 +58,7 @@ const features = [
       <>
         Acceso, rectificación, supresión, oposición, portabilidad y limitación.
         Cada solicitud genera un ticket con{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           control automático de plazos
         </strong>
         .
@@ -95,11 +95,11 @@ const features = [
     description: (
       <>
         Cada acción queda en una{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           cadena de custodia inmutable
         </strong>
         .{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           Evidencia matemática
         </strong>{" "}
         ante cualquier fiscalización de la autoridad.
@@ -152,11 +152,11 @@ const features = [
     description: (
       <>
         Identificación por{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           RUT, pasaporte, ID extranjero o Tax ID
         </strong>
         .{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           Formulario bilingüe
         </strong>{" "}
         español/inglés para clientes de cualquier país.
@@ -191,7 +191,7 @@ const features = [
     description: (
       <>
         El panel de administración avisa antes de que venza cada solicitud,{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           previniendo sanciones
         </strong>{" "}
         por incumplimiento de plazos legales.
@@ -228,8 +228,8 @@ const features = [
     description: (
       <>
         Tus clientes gestionan su privacidad desde el{" "}
-        <strong className="font-semibold text-white/90">portal</strong> o una{" "}
-        <strong className="font-semibold text-white/90">app nativa</strong>. Tu
+        <strong className="font-semibold text-[#262c64]">portal</strong> o una{" "}
+        <strong className="font-semibold text-[#262c64]">app nativa</strong>. Tu
         equipo administra todo desde cualquier dispositivo.
       </>
     ),
@@ -270,24 +270,24 @@ const features = [
 
 export default function SolutionSection() {
   return (
-    <section id="solucion" className="py-24 bg-[#141833]">
+    <section id="solucion" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mb-14">
           <Kicker index="02">La solución</Kicker>
-          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 leading-[1.05]">
+          <h2 className="text-4xl md:text-5xl font-semibold text-[#262c64] mb-6 leading-[1.05]">
             Todo el ciclo del dato, en una plataforma
           </h2>
-          <p className="text-[#9aa1af] text-lg leading-relaxed">
+          <p className="text-[#5f636f] text-lg leading-relaxed">
             Desde la captura del{" "}
-            <strong className="font-semibold text-white/90">
+            <strong className="font-semibold text-[#262c64]">
               consentimiento informado
             </strong>{" "}
             hasta el{" "}
-            <strong className="font-semibold text-white/90">
+            <strong className="font-semibold text-[#262c64]">
               ejercicio de derechos
             </strong>
             , con{" "}
-            <strong className="font-semibold text-white/90">
+            <strong className="font-semibold text-[#262c64]">
               evidencia inalterable
             </strong>{" "}
             en cada paso.
@@ -298,10 +298,10 @@ export default function SolutionSection() {
           {features.map((feature) => (
             <Card key={feature.title}>
               <div className="text-[#169d75] mb-4">{feature.icon}</div>
-              <h3 className="text-lg font-semibold text-white mb-2">
+              <h3 className="text-lg font-semibold text-[#262c64] mb-2">
                 {feature.title}
               </h3>
-              <p className="text-[#9aa1af] text-sm">{feature.description}</p>
+              <p className="text-[#5f636f] text-sm">{feature.description}</p>
             </Card>
           ))}
         </div>

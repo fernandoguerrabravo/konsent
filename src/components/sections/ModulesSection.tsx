@@ -7,7 +7,7 @@ const modules = [
     description: (
       <>
         Punto de entrada público{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           con tu marca, bilingüe
         </strong>
         , para que tus clientes gestionen su consentimiento.
@@ -44,7 +44,7 @@ const modules = [
     title: "Formulario de consentimiento",
     description: (
       <>
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           Captura legal por finalidad
         </strong>
         , con certificado, hash y registro de identidad, fecha e IP.
@@ -86,11 +86,11 @@ const modules = [
     description: (
       <>
         Tus clientes revisan sus consentimientos,{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           ejercen derechos
         </strong>{" "}
         y ven la{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           cadena de custodia
         </strong>
         .
@@ -130,7 +130,7 @@ const modules = [
     description: (
       <>
         Tu equipo gestiona solicitudes con{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           alertas de plazos
         </strong>
         , filtros y reportes de cumplimiento.
@@ -166,7 +166,7 @@ const modules = [
     description: (
       <>
         Módulo del titular y módulo administrativo en una{" "}
-        <strong className="font-semibold text-white/90">app nativa</strong> para
+        <strong className="font-semibold text-[#262c64]">app nativa</strong> para
         iOS y Android.
       </>
     ),
@@ -199,11 +199,11 @@ const modules = [
     title: "Documentos legales",
     description: (
       <>
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           Política de privacidad, contratos DPA
         </strong>{" "}
         y{" "}
-        <strong className="font-semibold text-white/90">
+        <strong className="font-semibold text-[#262c64]">
           Registro de Actividades de Tratamiento
         </strong>{" "}
         listos para usar.
@@ -235,16 +235,16 @@ const modules = [
 
 export default function ModulesSection() {
   return (
-    <section id="modulos" className="py-24 bg-[#141833]">
+    <section id="modulos" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mb-14">
           <Kicker index="04">Un ecosistema completo</Kicker>
-          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6 leading-[1.05]">
+          <h2 className="text-4xl md:text-5xl font-semibold text-[#262c64] mb-6 leading-[1.05]">
             Seis módulos que trabajan juntos
           </h2>
-          <p className="text-[#9aa1af] text-lg leading-relaxed">
+          <p className="text-[#5f636f] text-lg leading-relaxed">
             Todo lo que tu empresa necesita para cumplir la{" "}
-            <strong className="font-semibold text-white/90">Ley 21.719</strong>,
+            <strong className="font-semibold text-[#262c64]">Ley 21.719</strong>,
             integrado en una sola plataforma.
           </p>
         </div>
@@ -253,10 +253,10 @@ export default function ModulesSection() {
           {modules.map((module) => (
             <Card key={module.title}>
               <div className="text-[#169d75] mb-4">{module.icon}</div>
-              <h3 className="text-lg font-semibold text-white mb-2">
+              <h3 className="text-lg font-semibold text-[#262c64] mb-2">
                 {module.title}
               </h3>
-              <p className="text-[#9aa1af] text-sm">{module.description}</p>
+              <p className="text-[#5f636f] text-sm">{module.description}</p>
             </Card>
           ))}
         </div>

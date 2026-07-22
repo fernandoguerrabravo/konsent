@@ -23,7 +23,7 @@ export default function Kicker({
         </span>
       )}
       <span className="h-px w-8 bg-[#169d75]" />
-      <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#9aa1af]">
+      <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#5f636f]">
         {children}
       </span>
     </div>
