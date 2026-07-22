@@ -22,7 +22,7 @@ export default function WebinarSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Registrarse al webinar de Konsent"
-            className="block w-full max-w-sm shrink-0 border border-white/10 shadow-2xl transition-transform duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#169d75]"
+            className="block w-full max-w-sm shrink-0 border border-[#5f636f]/30 shadow-2xl transition-transform duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#169d75]"
           >
             <Image
               src="/banner.jpeg"

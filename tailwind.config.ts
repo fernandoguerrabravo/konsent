@@ -35,11 +35,18 @@ const config: Config = {
           900: "#0A3F30",
           950: "#06271f",
         },
-        // Navy from the logo wordmark
+        // Navy from the brand palette (#262c64)
         navy: {
           DEFAULT: "#262c64",
           light: "#3a4189",
           dark: "#191d45",
+        },
+        // Gray from the brand palette (#5f636f) + tints for dark UI
+        graphite: {
+          DEFAULT: "#5f636f",
+          light: "#9aa1af", // texto secundario legible sobre fondos oscuros
+          lighter: "#c3c7d0",
+          dark: "#3f424c",
         },
         // Alias so any legacy `primary-*` usage stays on-brand
         primary: {

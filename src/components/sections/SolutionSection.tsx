@@ -278,7 +278,7 @@ export default function SolutionSection() {
           <p className="text-xl text-white/90 mb-4">
             Todo el ciclo del dato, en una plataforma
           </p>
-          <p className="text-white/50">
+          <p className="text-[#9aa1af]">
             Desde la captura del{" "}
             <strong className="font-semibold text-white/90">
               consentimiento informado
@@ -302,7 +302,7 @@ export default function SolutionSection() {
               <h3 className="text-lg font-semibold text-white mb-2">
                 {feature.title}
               </h3>
-              <p className="text-white/50 text-sm">{feature.description}</p>
+              <p className="text-[#9aa1af] text-sm">{feature.description}</p>
             </Card>
           ))}
         </div>

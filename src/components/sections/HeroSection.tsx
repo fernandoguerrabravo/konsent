@@ -155,10 +155,10 @@ export default function HeroSection() {
 
         {/* Right visualization column — Blockchain card */}
         <div className="hidden lg:block flex-1 max-w-md w-full">
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-6 backdrop-blur-sm">
+          <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-6 backdrop-blur-sm">
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
-              <span className="text-white/50 text-sm font-medium">
+              <span className="text-[#9aa1af] text-sm font-medium">
                 Cadena de custodia
               </span>
               <span className="inline-flex items-center gap-1 bg-[#169d75]/10 text-[#169d75] px-2 py-0.5 rounded-none text-xs font-medium">
@@ -182,9 +182,9 @@ export default function HeroSection() {
             </div>
 
             {/* Block #4 */}
-            <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-4 mb-1">
+            <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-4 mb-1">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-white/50 text-xs">
+                <span className="text-[#9aa1af] text-xs">
                   Bloque #4 — reciente
                 </span>
                 <span className="inline-flex items-center bg-[#169d75]/10 text-[#169d75] px-2 py-0.5 rounded-none text-xs">
@@ -194,7 +194,7 @@ export default function HeroSection() {
               <p className="text-white text-sm font-medium mb-1">
                 Solicitud de acceso — ARQ-2025-00312
               </p>
-              <p className="text-white/50 text-xs font-mono truncate">
+              <p className="text-[#9aa1af] text-xs font-mono truncate">
                 sha256:F2A91C4E8B37D065A1F8C3E2B9470D6A…
               </p>
             </div>
@@ -205,14 +205,14 @@ export default function HeroSection() {
             </div>
 
             {/* Block #3 */}
-            <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-4 mb-1">
+            <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-4 mb-1">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-white/50 text-xs">Bloque #3</span>
+                <span className="text-[#9aa1af] text-xs">Bloque #3</span>
               </div>
               <p className="text-white text-sm font-medium mb-1">
                 Preferencias actualizadas
               </p>
-              <p className="text-white/50 text-xs font-mono truncate">
+              <p className="text-[#9aa1af] text-xs font-mono truncate">
                 sha256:B7D3F1A9C2E046B8D5F3A1C9E2B7D4F0…
               </p>
             </div>
@@ -223,16 +223,16 @@ export default function HeroSection() {
             </div>
 
             {/* Block #1 */}
-            <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-4">
+            <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-4">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-white/50 text-xs">
+                <span className="text-[#9aa1af] text-xs">
                   Bloque #1 — génesis
                 </span>
               </div>
               <p className="text-white text-sm font-medium mb-1">
                 Consentimiento inicial registrado
               </p>
-              <p className="text-white/50 text-xs font-mono truncate">
+              <p className="text-[#9aa1af] text-xs font-mono truncate">
                 sha256:A3F8B2C1D5E9F4A7B2C6D0E3F7A1B5C9…
               </p>
             </div>

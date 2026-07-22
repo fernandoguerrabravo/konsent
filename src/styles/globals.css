@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  /* Paleta oficial de marca Konsent */
+  :root {
+    --brand-green: #169d75; /* Verde oscuro */
+    --brand-navy: #262c64; /* Azul */
+    --brand-gray: #5f636f; /* Gris */
+    --brand-gray-light: #9aa1af; /* Tinte del gris, legible sobre fondos oscuros */
+  }
+
   html {
     scroll-behavior: smooth;
   }

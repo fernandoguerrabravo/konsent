@@ -4,7 +4,7 @@ const variantStyles = {
   primary:
     "bg-[#169d75] hover:bg-[#33B892] text-[#07231E] font-semibold shadow-lg shadow-[#169d75]/25",
   secondary:
-    "bg-white/5 border border-white/10 text-white hover:bg-white/10",
+    "bg-white/5 border border-[#5f636f]/30 text-white hover:bg-white/10",
   outline:
     "border border-[#169d75]/40 text-[#169d75] hover:border-[#169d75] hover:bg-[#169d75]/10",
 };

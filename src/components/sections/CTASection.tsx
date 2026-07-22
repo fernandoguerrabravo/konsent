@@ -27,8 +27,8 @@ export default function CTASection() {
           </a>
         </div>
         <div className="mt-6 space-y-1">
-          <p className="text-white/50">gabriela@konsent.cl</p>
-          <p className="text-white/50">+56 9 7779 4532</p>
+          <p className="text-[#9aa1af]">gabriela@konsent.cl</p>
+          <p className="text-[#9aa1af]">+56 9 7779 4532</p>
         </div>
       </div>
     </section>

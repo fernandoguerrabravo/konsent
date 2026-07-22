@@ -8,7 +8,7 @@ export default function Tab({ label, isActive, onClick }: TabProps) {
       className={`px-4 py-2 rounded-none text-sm font-medium transition-all duration-200 ${
         isActive
           ? "bg-[#169d75]/10 text-[#169d75] border border-[#169d75]/30"
-          : "text-white/50 hover:text-white/80 border border-transparent"
+          : "text-[#9aa1af] hover:text-white/80 border border-transparent"
       }`}
     >
       {label}

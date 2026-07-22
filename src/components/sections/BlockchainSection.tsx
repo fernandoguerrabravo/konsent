@@ -69,7 +69,7 @@ export default function BlockchainSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Evidencia que no se puede alterar
             </h2>
-            <p className="text-white/50 mb-8">
+            <p className="text-[#9aa1af] mb-8">
               La Ley 21.719 exige{" "}
               <strong className="font-semibold text-white/90">
                 responsabilidad proactiva
@@ -95,7 +95,7 @@ export default function BlockchainSection() {
                     <h3 className="font-semibold text-white mb-1">
                       {item.title}
                     </h3>
-                    <p className="text-white/50 text-sm">{item.description}</p>
+                    <p className="text-[#9aa1af] text-sm">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -104,7 +104,7 @@ export default function BlockchainSection() {
 
           {/* Right column — Visual integrity checker */}
           <div className="flex-1">
-            <div className="bg-white/[0.02] border border-white/[0.06] rounded-none p-6 backdrop-blur-sm">
+            <div className="bg-white/[0.02] border border-[#5f636f]/25 rounded-none p-6 backdrop-blur-sm">
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
                 <span className="text-sm font-medium text-white">
@@ -143,7 +143,7 @@ export default function BlockchainSection() {
                         <h4 className="text-sm font-semibold text-white">
                           {item.title}
                         </h4>
-                        <p className="text-xs text-white/50 mt-0.5">
+                        <p className="text-xs text-[#9aa1af] mt-0.5">
                           {item.detail}
                         </p>
                       </div>

@@ -14,7 +14,7 @@ export default function ChallengeSection() {
             <br />
             El incumplimiento cuesta caro.
           </p>
-          <p className="text-white/50">
+          <p className="text-[#9aa1af]">
             Toda empresa que trate{" "}
             <strong className="font-semibold text-white/90">
               datos personales
@@ -36,7 +36,7 @@ export default function ChallengeSection() {
             <p className="text-4xl font-bold bg-gradient-to-r from-[#0F7357] to-[#33B892] bg-clip-text text-transparent mb-2">
               20.000
             </p>
-            <p className="text-white/50">
+            <p className="text-[#9aa1af]">
               UTM de multa máxima por infracción gravísima (~USD 1,5M)
             </p>
           </Card>
@@ -45,7 +45,7 @@ export default function ChallengeSection() {
             <p className="text-4xl font-bold bg-gradient-to-r from-[#0F7357] to-[#33B892] bg-clip-text text-transparent mb-2">
               30
             </p>
-            <p className="text-white/50">
+            <p className="text-[#9aa1af]">
               días corridos para responder cada solicitud de derechos
             </p>
           </Card>
@@ -54,7 +54,7 @@ export default function ChallengeSection() {
             <p className="text-4xl font-bold bg-gradient-to-r from-[#0F7357] to-[#33B892] bg-clip-text text-transparent mb-2">
               8
             </p>
-            <p className="text-white/50">
+            <p className="text-[#9aa1af]">
               principios legales obligatorios de tratamiento de datos
             </p>
           </Card>
