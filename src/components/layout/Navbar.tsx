@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav
       aria-label="Navegación principal"
-      className="fixed top-0 w-full z-50 bg-[rgba(10,10,15,0.8)] backdrop-blur-xl border-b border-[#5f636f]/25"
+      className="fixed top-0 w-full z-50 bg-[rgba(20,24,51,0.8)] backdrop-blur-xl border-b border-[#5f636f]/25"
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#" aria-label="Konsent - Inicio">
@@ -84,7 +84,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-[#5f636f]/25 bg-[rgba(10,10,15,0.95)] backdrop-blur-xl">
+        <div className="md:hidden border-t border-[#5f636f]/25 bg-[rgba(20,24,51,0.95)] backdrop-blur-xl">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a

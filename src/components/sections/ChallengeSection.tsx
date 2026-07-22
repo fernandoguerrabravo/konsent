@@ -2,7 +2,7 @@ import Card from "@/components/ui/Card";
 
 export default function ChallengeSection() {
   return (
-    <section id="desafio" className="py-24 bg-[#0a0a0f]">
+    <section id="desafio" className="py-24 bg-[#262c64]">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

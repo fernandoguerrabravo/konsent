@@ -4,7 +4,7 @@ import { DEMO_URL } from "@/lib/constants";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-[#0a0a0f]">
+    <section className="relative overflow-hidden bg-[#141833]">
       {/* Radial gradient glow background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(22,157,117,0.15)_0%,rgba(22,157,117,0.05)_40%,transparent_70%)]" />

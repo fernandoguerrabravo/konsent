@@ -29,7 +29,7 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`min-w-[44px] min-h-[44px] rounded-none font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#169d75]/50 focus:ring-offset-2 focus:ring-offset-[#0a0a0f] disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`min-w-[44px] min-h-[44px] rounded-none font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#169d75]/50 focus:ring-offset-2 focus:ring-offset-[#141833] disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {children}
     </button>

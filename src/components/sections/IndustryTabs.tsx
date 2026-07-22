@@ -40,7 +40,7 @@ export default function IndustryTabs() {
   const activeIndustry = industries.find((ind) => ind.id === activeTab);
 
   return (
-    <section className="pt-8 pb-16 bg-[#0a0a0f]">
+    <section className="pt-8 pb-16 bg-[#141833]">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
           Diseñado para cualquier industria

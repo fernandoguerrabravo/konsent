@@ -58,7 +58,7 @@ export default function BlockchainSection() {
   ];
 
   return (
-    <section id="blockchain" className="py-24 bg-[#0a0a0f]">
+    <section id="blockchain" className="py-24 bg-[#1b2048]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left column — Explanation content */}
