@@ -1,5 +1,5 @@
 const WEBINAR_METRICS = [
-  { value: "+200", label: "Asistentes en vivo" },
+  { value: "+100", label: "Participantes" },
   { value: "98%", label: "Satisfacción de participantes" },
 ];
 
