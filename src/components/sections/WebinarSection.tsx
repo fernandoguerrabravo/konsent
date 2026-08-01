@@ -38,7 +38,7 @@ export default function WebinarSection() {
             </h2>
 
             <p className="text-[#5f636f] text-lg max-w-xl mx-auto lg:mx-0 mb-8">
-              Más de 200 profesionales se unieron para conocer cómo prepararse
+              Más de 100 profesionales se unieron para conocer cómo prepararse
               ante la nueva normativa de protección de datos personales. En
               Konsent estamos comprometidos con acompañar a las PYMEs chilenas en
               cada paso hacia el cumplimiento — con tecnología accesible,
