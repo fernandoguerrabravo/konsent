@@ -37,13 +37,13 @@ export default function WebinarSection() {
             </span>
 
             <h2 className="text-3xl md:text-4xl font-semibold text-[#262c64] mt-5 mb-4 leading-[1.1]">
-              Desayuno Konsent: Prepara tu empresa para la Ley 21.719
+              ComexPay: Contabilidad Automatizada para Agencias de Aduanas
             </h2>
 
             <p className="text-[#5f636f] text-lg max-w-xl mx-auto lg:mx-0 mb-8">
-              Acompáñanos en un desayuno exclusivo donde expertos te guiarán en
-              los pasos clave para cumplir con la nueva normativa de protección
-              de datos personales.{" "}
+              Acompáñanos en un desayuno exclusivo donde conocerás cómo
+              automatizar la contabilidad de tu agencia de aduanas con
+              ComexPay.{" "}
               <strong className="font-semibold text-[#262c64]">
                 Cupos limitados.
               </strong>
